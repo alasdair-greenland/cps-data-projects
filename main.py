@@ -12,12 +12,13 @@ EPR_CSV_LIST = filter(lambda x: x.startswith("employeepositionroster"), os.listd
 """
 for file in EPR_CSV_LIST:
   df = pd.read_csv(f'data/{file}')
-  df.drop("Unnamed: 0", inplace=True, axis=1)
+  #df.drop("Unnamed: 0", inplace=True, axis=1)
   df["Annual Salary"] = df["Annual Salary"].apply(lambda x: str(x).replace(",", ""))
   df["FTE Annual Salary"] = df["FTE Annual Salary"].apply(lambda x: str(x).replace(",", ""))
   df["Annual Benefit Cost"] = df["Annual Benefit Cost"].apply(lambda x: str(x).replace(",", ""))
   df.to_csv(f'data/{file}', index=False)
 """
+
 
 def salary_report(df):
   """
@@ -39,10 +40,19 @@ def salary_report(df):
 def get_salary(df, posno):
   """
   Returns the salary corresponding to the given position number
+  Returns as a dict with "Salary": val for compatibility reasons
   """
-  return df.loc[df["Pos #"] == posno]["Annual Salary"].iat[0]
+  return {
+    "Salary": df.loc[df["Pos #"] == posno]["Annual Salary"].iat[0]
+  }
 
-def all_years(fn, *args):
+def filter(df, filters):
+  outdf = df
+  for (key, lst) in filters.items():
+    outdf = outdf.loc[outdf[key].isin(lst)]
+  return outdf
+
+def all_years(fn, filters, *args):
   """
   Runs fn on all employee position rosters
   Returns a dictionary mapping the date of that roster to the result of the
@@ -51,8 +61,75 @@ def all_years(fn, *args):
   out = {}
   for df_name in EPR_CSV_LIST:
     df = pd.read_csv(f'data/{df_name}')
+    if len(filters) > 0:
+      df = filter(df, filters)
     date = re.split("[._]", df_name)[1]
     out[date] = fn(df, *args)
+  return out
+
+def flip_sort(dc):
+  """
+  Expects a dictionary where the values are also dictionaries.
+  Switches the keys of the inner dictionaries to the outer ones and vice versa
+
+  for example:
+  {
+    a: { foo: 1, bar: 3 },
+    b: { foo: 5, bar: 2 }
+  }
+  becomes
+  {
+    foo: { a: 1, b: 5 },
+    bar: { a: 3, b: 2 }
+  }
+  """
+  first = True
+  out = {}
+  for key, dc2 in dc.items():
+    for key2, val in dc2.items():
+      if first: out[key2] = {}
+      out[key2][key] = val
+    first = False
+  return out
+
+def trends(dc):
+  """
+  Expects a dictionary whose keys are dates, specifically 20YY-06-30
+  Only to be used internally
+  """
+  out = {}
+  lst = list(dc.keys())
+  lst.sort()
+  latest_date = lst[-1]
+  print(latest_date)
+
+  year = int(latest_date.split("-")[0])
+  out["Current Value"] = dc[latest_date]
+  out["Last Year"] = dc[f'{year - 1}-06-30']
+  out["5 Years Ago"] = dc[f'{year - 5}-06-30']
+
+  delta1 = out["Current Value"] - out["Last Year"]
+  pct1 = delta1 / out["Last Year"]
+  pct1 = round(pct1 * 100, 1)
+
+  out["Change since last year"] = f'{delta1} ({pct1}%)'
+
+  delta2 = out["Current Value"] - out["5 Years Ago"]
+  pct2 = delta2 / out["5 Years Ago"]
+  pct2 = round(pct2 * 100, 1)
+
+  out["Change over 5 years"] = f'{delta2} ({pct2}%)'
+
+  return out
+
+def all_trends(dc):
+  """
+  Expects a dict where keys are stats and values are dicts where
+  keys are dates and values are the value for that stat
+  """
+  out = {}
+  for key, dc2 in dc.items():
+    out[key] = trends(dc2)
   return out
 
 def pretty_print_dict(dc):
@@ -67,4 +144,4 @@ def pretty_print_dict_r(dc, prevkey, indent):
       print((" " * indent) + key + ": " + str(val) + ",")
   print((" " * (indent - 2)) + "},")
 
-pretty_print_dict(all_years(salary_report))
+pretty_print_dict(all_trends(flip_sort(all_years(salary_report, {}))))
