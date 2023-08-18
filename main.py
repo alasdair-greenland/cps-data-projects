@@ -1,14 +1,16 @@
 import pandas as pd
 import os
-import re
+import re # regex
+import requests as reqs
+
+SCHOOL_PROFILE_URL = "https://api.cps.edu/schoolprofile/CPS/"
 
 #List of all employee position roster csv files
 EPR_CSV_LIST = filter(lambda x: x.startswith("employeepositionroster"), os.listdir("data"))
 
-# currently missing 2014 and 2015
-# this is because my wifi stopped working when I was trying to download + convert them
-# will add those asap
-
+# this formats all files the same way
+# this was only needed for the 2014-2016 files and shouldn't be needed for 
+# future years but I'm leaving it here (commented) just in case
 """
 for file in EPR_CSV_LIST:
   df = pd.read_csv(f'data/{file}')
@@ -47,6 +49,10 @@ def get_salary(df, posno):
   }
 
 def filter(df, filters):
+  """
+  Filters a dataframe to only keep rows where the value in column {key} is equal
+  to one of the values in { [value] }
+  """
   outdf = df
   for (key, lst) in filters.items():
     outdf = outdf.loc[outdf[key].isin(lst)]
@@ -95,7 +101,7 @@ def flip_sort(dc):
 def trends(dc):
   """
   Expects a dictionary whose keys are dates, specifically 20YY-06-30
-  Only to be used internally
+  Only to be used internally, as a helper function for all_trends
   """
   out = {}
   lst = list(dc.keys())
@@ -120,7 +126,11 @@ def trends(dc):
 
   out["Change over 5 years"] = f'{round(delta2, 1)} ({pct2}%)'
 
-  avg_change = (pct2 ** 0.2 + pct1) / 2
+  sign2 = pct2 / abs(pct2) # the sign of the second percentage
+  avg_of_five_year_rate = abs(pct2) ** 0.2
+  avg_of_five_year_rate *= sign2
+
+  avg_change = (avg_of_five_year_rate + pct1) / 2
   # the average of:
   #   the geometric mean of the 5 year rate of change and
   #   the one year rate of change
@@ -135,6 +145,8 @@ def all_trends(dc):
   """
   Expects a dict where keys are stats and values are dicts where
   keys are dates and values are the value for that stat
+
+  Analyzes trends in the given data, such as rates of change
   """
   out = {}
   for key, dc2 in dc.items():
@@ -145,9 +157,15 @@ def analyze(fn, filters, *args):
   return all_trends(flip_sort(all_years(fn, filters, *args)))
 
 def pretty_print_dict(dc):
+  """
+  Pretty prints a given dictionary, formatted as it would be coded
+  """
   pretty_print_dict_r(dc, "dict", 2)
 
 def pretty_print_dict_r(dc, prevkey, indent):
+  """
+  Recursive helper function for pretty_print_dict
+  """
   print((" " * (indent - 2)) + prevkey + ": {")
   for (key, val) in dc.items():
     if type(val) is dict:
@@ -156,8 +174,36 @@ def pretty_print_dict_r(dc, prevkey, indent):
       print((" " * indent) + key + ": " + str(val) + ",")
   print((" " * (indent - 2)) + "},")
 
+def get_dept_id(school_id):
+  """
+  Given a school id, returns the corresponding department id, for use in
+  querying the employee position roster data
+  """
+  res = reqs.get(f'{SCHOOL_PROFILE_URL}SingleSchoolProfile?SchoolID={school_id}')
+  return res.json()["FinanceID"]
+
 # Filters
 TEACHERS = { "Job Title": [ "Regular Teacher" ] }
 PRINCIPALS = { "Job Title": [ "Principal" ] }
 
-pretty_print_dict(analyze(salary_report, PRINCIPALS))
+def school_employees(school_id):
+  """
+  Returns a filter that will retrieve only employees at the provided school id
+  """
+  return { "Dept ID": [ get_dept_id(school_id) ] }
+
+def combine_filters(*filters):
+  """
+  Combines multiple filter objects into one
+  """
+  out = {}
+  for obj in filters:
+    for key, val in obj.items():
+      if key in out:
+        out[key] += val
+      else:
+        out[key] = val
+  pretty_print_dict(out)
+  return out
+
+pretty_print_dict(analyze(salary_report, combine_filters(school_employees(609755), TEACHERS)))
