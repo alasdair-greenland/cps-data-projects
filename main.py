@@ -104,21 +104,30 @@ def trends(dc):
   print(latest_date)
 
   year = int(latest_date.split("-")[0])
-  out["Current Value"] = dc[latest_date]
-  out["Last Year"] = dc[f'{year - 1}-06-30']
-  out["5 Years Ago"] = dc[f'{year - 5}-06-30']
+  out["Current Value"] = round(dc[latest_date], 1)
+  out["Last Year"] = round(dc[f'{year - 1}-06-30'], 1)
+  out["5 Years Ago"] = round(dc[f'{year - 5}-06-30'], 1)
 
   delta1 = out["Current Value"] - out["Last Year"]
   pct1 = delta1 / out["Last Year"]
   pct1 = round(pct1 * 100, 1)
 
-  out["Change since last year"] = f'{delta1} ({pct1}%)'
+  out["Change since last year"] = f'{round(delta1, 1)} ({pct1}%)'
 
   delta2 = out["Current Value"] - out["5 Years Ago"]
   pct2 = delta2 / out["5 Years Ago"]
   pct2 = round(pct2 * 100, 1)
 
-  out["Change over 5 years"] = f'{delta2} ({pct2}%)'
+  out["Change over 5 years"] = f'{round(delta2, 1)} ({pct2}%)'
+
+  avg_change = (pct2 ** 0.2 + pct1) / 2
+  # the average of:
+  #   the geometric mean of the 5 year rate of change and
+  #   the one year rate of change
+
+  next_value = out["Current Value"] * (avg_change/100 + 1)
+
+  out["Projected Value Next Year"] = round(next_value, 1)
 
   return out
 
@@ -132,6 +141,9 @@ def all_trends(dc):
     out[key] = trends(dc2)
   return out
 
+def analyze(fn, filters, *args):
+  return all_trends(flip_sort(all_years(fn, filters, *args)))
+
 def pretty_print_dict(dc):
   pretty_print_dict_r(dc, "dict", 2)
 
@@ -144,4 +156,8 @@ def pretty_print_dict_r(dc, prevkey, indent):
       print((" " * indent) + key + ": " + str(val) + ",")
   print((" " * (indent - 2)) + "},")
 
-pretty_print_dict(all_trends(flip_sort(all_years(salary_report, {}))))
+# Filters
+TEACHERS = { "Job Title": [ "Regular Teacher" ] }
+PRINCIPALS = { "Job Title": [ "Principal" ] }
+
+pretty_print_dict(analyze(salary_report, PRINCIPALS))
