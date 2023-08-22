@@ -1,0 +1,547 @@
+School_ID,Short_Name,Long_Name
+610587,DYETT ARTS HS,Walter Henri Dyett High School for the Arts
+400013,ASPIRA - EARLY COLLEGE HS,ASPIRA Charter School - Early College High School
+400022,CHIARTS HS,Chicago High School for the Arts (ChiArts)
+400032,CICS - ELLISON HS,CICS - Ralph Ellison
+400033,CICS - LONGWOOD,CICS - Longwood
+400034,CICS - NORTHTOWN HS,CICS - Northtown
+400035,CHICAGO MATH & SCIENCE HS,Chicago Math and Science Academy Charter School
+400051,NOBLE - NOBLE HS,Noble - Noble College Prep
+400052,NOBLE - COMER,Noble - Gary Comer College Prep
+400053,NOBLE - GOLDER HS,Noble - Golder College Prep
+400054,NOBLE - PRITZKER HS,Noble - Pritzker College Prep
+400055,NOBLE - RAUNER HS,Noble - Rauner College Prep
+400056,NOBLE - ROWE CLARK HS,Noble - Rowe-Clark Math and Science Academy
+400057,NOBLE - UIC HS,Noble - UIC College Prep
+400058,NLCP - CHRISTIANA HS,North Lawndale College Prep - Christiana
+400059,NLCP - COLLINS HS,North Lawndale College Prep - Collins
+400061,PERSPECTIVES - LEADERSHIP HS,Perspectives - Leadership Academy
+400062,PERSPECTIVES - TECH HS,Perspectives - High School of Technology
+400064,PERSPECTIVES - JOSLIN HS,Perspectives - Rodney D. Joslin
+400066,PERSPECTIVES - MATH & SCI HS,Perspectives - Math and Science Academy
+400077,U OF C - WOODLAWN HS,University of Chicago - Woodlawn
+400085,ACERO - GARCIA HS,Acero Charter Schools - Major Hector P. Garcia MD
+400086,URBAN PREP - ENGLEWOOD HS,Urban Prep Academy for Young Men - Englewood
+400091,CHICAGO TECH HS,Chicago Technology Academy High School
+400094,EPIC HS,EPIC Academy Charter High School
+400097,NOBLE - BULLS HS,Noble - Chicago Bulls College Prep
+400098,NOBLE - MUCHIN HS,Noble - Muchin College Prep
+400104,INSTITUTO - HEALTH,Instituto Health Sciences Career Academy
+400105,URBAN PREP - BRONZEVILLE HS,Urban Prep Academy for Young Men - Bronzeville
+400106,NOBLE - JOHNSON HS,Noble - John and Eunice Johnson College Prep
+400117,NOBLE - HANSBERRY HS,Noble - Hansberry College Prep
+400118,NOBLE - DRW HS,Noble - DRW College Prep
+400119,LEGAL PREP HS,Legal Prep Charter Academy
+400121,ACERO - DE LA CRUZ,Acero Charter Schools - Sor Juana Inés de la Cruz
+400149,ACERO - SOTO HS,Acero Charter Schools - Victoria Soto
+400156,NOBLE - BUTLER HS,Noble - Butler College Prep
+400157,NOBLE - BAKER HS,Noble - Baker College Prep
+400161,CHICAGO COLLEGIATE,Chicago Collegiate Charter School
+400162,INTRINSIC HS,Intrinsic Charter School
+400167,HORIZON - SOUTHWEST,Horizon Science Academy Southwest Chicago Charter
+400169,NOBLE - ITW SPEER HS,Noble - ITW David Speer Academy
+400170,NOBLE - ACADEMY HS,Noble - The Noble Academy
+400172,ASPIRA - BUSINESS & FINANCE HS,ASPIRA Business and Finance
+400179,NOBLE - MANSUETO HS,Noble Mansueto High School
+400181,ART IN MOTION,Art in Motion Charter School
+609674,CHICAGO VOCATIONAL HS,Chicago Vocational Career Academy High School
+609676,DUNBAR HS,Paul Laurence Dunbar Career Academy High School
+609678,JONES HS,William Jones College Preparatory High School
+609679,PROSSER HS,Charles Allen Prosser Career Academy High School
+609680,PAYTON HS,Walter Payton College Preparatory High School
+609682,RICHARDS HS,Ellen H Richards Career Academy High School
+609691,NORTH-GRAND HS,North-Grand High School
+609692,SIMEON HS,Neal F Simeon Career Academy High School
+609693,WESTINGHOUSE HS,George Westinghouse College Prep
+609694,HANCOCK HS,John Hancock College Preparatory High School
+609695,AMUNDSEN HS,Roald Amundsen High School
+609698,BOGAN HS,William J Bogan High School
+609704,FARRAGUT HS,David G Farragut Career Academy High School
+609705,FENGER HS,Christian Fenger Academy High School
+609708,FOREMAN HS,Edwin G. Foreman College and Career Academy
+609709,GAGE PARK HS,Gage Park High School
+609710,HARLAN HS,John M Harlan Community Academy High School
+609712,HIRSCH HS,Emil G Hirsch Metropolitan High School
+609713,HYDE PARK HS,Hyde Park Academy High School
+609715,KELLY HS,Thomas Kelly College Preparatory
+609716,KELVYN PARK HS,Kelvyn Park High School
+609718,KENNEDY HS,John F Kennedy High School
+609726,BROOKS HS,Gwendolyn Brooks College Preparatory Academy HS
+609738,LINCOLN PARK HS,Lincoln Park High School
+609719,LAKE VIEW HS,Lake View High School
+609720,LANE TECH HS,Albert G Lane Technical High School
+609722,MANLEY HS,Manley Career Academy High School
+609723,MARSHALL HS,John Marshall Metropolitan High School
+609724,MATHER HS,Stephen T Mather High School
+609725,MORGAN PARK HS,Morgan Park High School
+609727,PHILLIPS HS,Wendell Phillips Academy High School
+609728,ROOSEVELT HS,Theodore Roosevelt High School
+609729,SCHURZ HS,Carl Schurz High School
+609730,SENN HS,Nicholas Senn High School
+609732,STEINMETZ HS,Charles P Steinmetz College Preparatory HS
+609733,SULLIVAN HS,Roger C Sullivan High School
+609734,TAFT HS,William Howard Taft High School
+609735,TILDEN HS,Edward Tilden Career Community Academy HS
+609737,VON STEUBEN HS,Friedrich W von Steuben Metropolitan Science HS
+609739,WASHINGTON HS,George Washington High School
+609740,WELLS HS,Wells Community Academy High School
+609741,HUBBARD HS,Gurdon S Hubbard High School
+609744,NORTHSIDE LEARNING HS,Northside Learning Center High School
+609746,KENWOOD HS,Kenwood Academy High School
+609749,NORTHSIDE PREP HS,Northside College Preparatory High School
+609751,KING HS,Dr  Martin Luther King  Jr  College Prep HS
+609753,CHICAGO AGRICULTURE HS,Chicago High School for Agricultural Sciences
+609754,CHICAGO MILITARY HS,Chicago Military Academy High School
+609755,YOUNG HS,Whitney M Young Magnet High School
+609756,CURIE HS,Marie Sklodowska Curie Metropolitan High School
+609759,CLEMENTE HS,Roberto Clemente Community Academy High School
+609760,CARVER MILITARY HS,George Washington Carver Military Academy HS
+609761,CORLISS HS,George H Corliss High School
+609762,JULIAN HS,Percy L Julian High School
+609764,JUAREZ HS,Benito Juarez Community Academy High School
+609766,VAUGHN HS,Jacqueline B Vaughn Occupational High School
+609772,ADDAMS,Jane Addams Elementary School
+609773,TUBMAN,Harriet Tubman Elementary School
+609774,ALCOTT ES,Louisa May Alcott College Preparatory ES
+609777,ARMOUR,Phillip D Armour Elementary School
+609779,ARMSTRONG G,George Armstrong International Studies ES
+609780,MARINE LEADERSHIP AT AMES HS,Marine Leadership Academy at Ames
+609782,AUDUBON,John J Audubon Elementary School
+609786,AVALON PARK,Avalon Park Elementary School
+609788,BARNARD,Alice L Barnard Computer Math & Science Ctr ES
+609789,BARRY,John Barry Elementary School
+609790,BARTON,Clara Barton Elementary School
+609791,BASS,Perkins Bass Elementary School
+609792,BATEMAN,Newton Bateman Elementary School
+609793,NICHOLSON,Lillian R. Nicholson STEM Academy
+609794,EDISON,Thomas A Edison Regional Gifted Center ES
+609795,CLARK ES,George Rogers Clark Elementary School
+609796,BEAUBIEN,Jean Baptiste Beaubien Elementary School
+609797,BEIDLER,Jacob Beidler Elementary School
+609798,BELDING,Hiram H Belding Elementary School
+609799,BELL,Alexander Graham Bell Elementary School
+609800,BENNETT,Frank I Bennett Elementary School
+609803,BLAINE,James G Blaine Elementary School
+609804,BOONE,Daniel Boone Elementary School
+609805,JOPLIN,Scott Joplin Elementary School
+609806,BRADWELL,Myra Bradwell Communications Arts & Sciences ES
+609807,HAMPTON,Lionel Hampton Fine & Performing Arts ES
+609808,HALEY,Alex Haley Elementary Academy
+609809,BRENTANO,Lorenz Brentano Math & Science Academy ES
+609810,BRIDGE,Norman A Bridge Elementary School
+609811,BRIGHT,Orville T Bright Elementary School
+609812,BROWN W,William H Brown Elementary School
+609813,BROWNELL,Charles S Brownell Elementary School
+609815,BOUCHET,Edward A Bouchet Math & Science Academy ES
+609817,BUDLONG,Lyman A Budlong Elementary School
+609818,BURBANK,Luther Burbank Elementary School
+609819,BURKE,Edmond Burke Elementary School
+609820,BURLEY,Augustus H Burley Elementary School
+609821,BURNHAM,Burnham Elementary Inclusive Academy
+609827,BURNSIDE,Burnside Elementary Scholastic Academy
+609828,BURR,Jonathan Burr Elementary School
+609829,BURROUGHS,John C Burroughs Elementary School
+609830,BRUNSON,Milton Brunson Math & Science Specialty ES 
+609832,BYRNE,Michael M Byrne Elementary School
+609833,CALDWELL,Charles P Caldwell Academy of Math & Science ES
+609834,LITTLE VILLAGE,Little Village Elementary School
+609835,CAMERON,Daniel R Cameron Elementary School
+609836,CANTY,Arthur E Canty Elementary School
+609837,CARNEGIE,Andrew Carnegie Elementary School
+609839,CARROLL,Carroll-Rosenwald Specialty Elementary School
+609842,CARSON,Rachel Carson Elementary School
+609844,CARTER,William W Carter Elementary School
+609845,CARVER G,George Washington Carver Primary School
+609848,ALDRIDGE,Ira F Aldridge Elementary School
+609849,CASSELL,George F Cassell Elementary School
+609850,GREELEY,Horace Greeley Elementary School
+609851,CHALMERS,Thomas Chalmers Specialty Elementary School
+609852,CHAPPELL,Eliza Chappell Elementary School
+609853,CHASE,Salmon P Chase Elementary School
+609854,CHOPIN,Frederic Chopin Elementary School
+609855,CHRISTOPHER,Walter S Christopher Elementary School
+609856,CLAY,Henry Clay Elementary School
+609857,CLEVELAND,Grover Cleveland Elementary School
+609859,CLINTON,DeWitt Clinton Elementary School
+609861,CLISSOLD,Henry R Clissold Elementary School
+609862,COLES,Edward Coles Elementary Language Academy
+609863,COLUMBUS,Christopher Columbus Elementary School
+609864,COOK,John W Cook Elementary School
+609865,JORDAN,Jordan Elementary Community School
+609866,COONLEY,John C Coonley Elementary School
+609867,COOPER,Peter Cooper Elementary Dual Language Academy
+609869,LANGFORD,Anna R. Langford Community Academy
+609870,CORKERY,Daniel J Corkery Elementary School
+609872,PEREZ,Manuel Perez Elementary School
+609873,CROWN,Crown Community Academy of Fine Arts Center ES
+609874,DIRKSEN,Everett McKinley Dirksen Elementary School
+609875,DARWIN,Charles R Darwin Elementary School
+609876,DAVIS N,Nathan S Davis Elementary School
+609879,DAWES,Charles Gates Dawes Elementary School
+609880,DECATUR,Stephen Decatur Classical Elementary School
+609883,DENEEN,Charles S Deneen Elementary School
+609884,DEVER,William E Dever Elementary School
+609885,DEWEY,Dewey Elementary Academy of Fine Arts
+609887,DIXON,Arthur Dixon Elementary School
+609891,DOOLITTLE,James R Doolittle Jr Elementary School
+609893,DORE,John C Dore Elementary School
+609894,DRAKE,John B Drake Elementary School
+609895,TURNER-DREW,Turner-Drew Elementary Language Academy
+609896,DRUMMOND,Thomas Drummond Elementary School
+609897,EARLE,Charles W Earle Elementary School
+609898,EBERHART,John F Eberhart Elementary School
+609899,EBINGER,Christian Ebinger Elementary School
+609900,CURTIS,George W Curtis Elementary School
+609901,EDGEBROOK,Edgebrook Elementary School
+609902,METCALFE,Ralph H Metcalfe Elementary Community Academy
+609903,EDWARDS,Richard Edwards Elementary School
+609904,ELLINGTON,Edward K Ellington Elementary School
+609907,ERICSON,Leif Ericson Elementary Scholastic Academy
+609908,ESMOND,Esmond Elementary School
+609909,EVERETT,Edward Everett Elementary School
+609910,FALCONER,Laughlin Falconer Elementary School
+609912,FARNSWORTH,James B Farnsworth Elementary School
+609917,FERNWOOD,Fernwood Elementary School
+609918,FIELD,Eugene Field Elementary School
+609919,FISKE,John Fiske Elementary School
+609920,KANOON,Gerald Delgado Kanoon Elementary Magnet School
+609921,TELPOCHCALLI,Telpochcalli Elementary School
+609922,BELMONT-CRAGIN,Belmont-Cragin Elementary School
+609924,FORT DEARBORN,Fort Dearborn Elementary School
+609925,KELLMAN,Joseph Kellman Corporate Community ES
+609926,FRANKLIN,Franklin Elementary Fine Arts Center
+609927,FOSTER PARK,Foster Park Elementary School
+609928,FULLER,Melville W Fuller Elementary School
+609929,FULTON,Robert Fulton Elementary School
+609930,FUNSTON,Frederick Funston Elementary School
+609933,GALE,Stephen F Gale Elementary Community Academy
+609935,GALLISTEL,Matthew Gallistel Elementary Language Academy
+609937,GARVY,John W Garvy Elementary School
+609938,GARY,Joseph E Gary Elementary School
+609939,GILLESPIE,Frank L Gillespie Elementary School
+609941,RANDOLPH,Asa Philip Randolph Elementary School
+609942,GOETHE,Johann W von Goethe Elementary School
+609943,OWENS,Jesse Owens Elementary Community Academy
+609944,GRISSOM,Virgil Grissom Elementary School
+609945,GOUDY,William C. Goudy Technology Academy
+609947,GRAHAM ES,Alexander Graham Elementary School
+609949,GRAY,William P Gray Elementary School
+609950,ORTIZ DE DOMINGUEZ,Josefa Ortiz De Dominguez Elementary School
+609951,ARIEL,Ariel Elementary Community Academy
+609952,GREENE,Nathanael Greene Elementary School
+609954,GREGORY,John Milton Gregory Elementary School
+609955,GRESHAM,Walter Q Gresham Elementary School
+609956,GRIMES,Robert L Grimes Elementary School
+609958,GUNSAULUS,Frank W Gunsaulus Elementary Scholastic Academy
+609959,HAINES,John Charles Haines Elementary School
+609960,HALE,Nathan Hale Elementary School
+609961,NINOS HEROES,Ninos Heroes Elementary Academic Center
+609963,HAMILTON,Alexander Hamilton Elementary School
+609964,HAMLINE,John H Hamline Elementary School
+609966,HAMMOND,Charles G Hammond Elementary School
+609967,FINKL,William F Finkl Elementary School
+609968,MCAULIFFE,Sharon Christa McAuliffe Elementary School
+609969,HARTE,Bret Harte Elementary School
+609971,HARVARD,John Harvard Elementary School of Excellence
+609972,HAUGAN,Helge A Haugan Elementary School
+609973,ZAPATA,Emiliano Zapata Elementary Academy
+609974,HAWTHORNE,Hawthorne Elementary Scholastic Academy
+609975,HAY,John Hay Elementary Community Academy
+609976,HAYT,Stephen K Hayt Elementary School
+609977,WOODLAWN,Woodlawn Community Elementary School
+609978,SMITH,Wendell Smith Elementary School
+609979,HEALY,Robert Healy Elementary School
+609981,HEARST,Phoebe Apperson Hearst Elementary School
+609983,HEDGES,James Hedges Elementary School
+609985,HEFFERAN,Helen M Hefferan Elementary School
+609986,HENDERSON,Charles R Henderson Elementary School
+609987,HENDRICKS,Thomas A Hendricks Elementary Community Academy
+609988,HENRY,Patrick Henry Elementary School
+609990,SOUTH LOOP,South Loop Elementary School
+609991,HERZL,Theodore Herzl Elementary School
+609993,LARA,Agustin Lara Elementary Academy
+609994,HIBBARD,William G Hibbard Elementary School
+609995,HITCH,Rufus M Hitch Elementary School
+609996,HOLDEN,Charles N Holden Elementary School
+609997,HOLMES,Oliver Wendell Holmes Elementary School
+610000,HOWE,Julia Ward Howe Elementary School of Excellence
+610002,HOYNE,Thomas Hoyne Elementary School
+610003,CUFFE,Paul Cuffe Math-Science Technology Academy ES
+610004,CULLEN,Countee Cullen Elementary School
+610005,HUGHES C,Charles Evans Hughes Elementary School
+610006,HURLEY,Edward N Hurley Elementary School
+610009,GALILEO,Galileo Math & Science Scholastic Academy ES
+610010,JAHN,Friedrich L. Jahn Elementary of the Fine Arts
+610011,JAMIESON,Minnie Mars Jamieson Elementary School
+610013,PILSEN,Pilsen Elementary Community Academy
+610016,KELLOGG,Kate S Kellogg Elementary School
+610015,JUNGMAN,Joseph Jungman Elementary School
+610017,SAUCEDO,Maria Saucedo Elementary Scholastic Academy
+610019,KERSHAW,Joshua D Kershaw Elementary School
+610021,CASALS,Pablo Casals Elementary School
+610022,KILMER,Joyce Kilmer Elementary School
+610024,CARDENAS,Lazaro Cardenas Elementary School
+610026,KINZIE,John H Kinzie Elementary School
+610027,KIPLING,Rudyard Kipling Elementary School
+610029,LOZANO,Rodolfo Lozano Bilingual & International Ctr ES
+610030,KOZMINSKI,Charles Kozminski Elementary Community Academy
+610032,GREEN,Wendell E Green Elementary School
+610033,LASALLE,LaSalle Elementary Language Academy
+610034,LAWNDALE,Lawndale Elementary Community Academy
+610036,LEWIS,Leslie Lewis Elementary School
+610037,LIBBY,Arthur A Libby Elementary School
+610038,LINCOLN,Abraham Lincoln Elementary School
+610039,VON LINNE,Carl von Linne Elementary School
+610040,LLOYD,Henry D Lloyd Elementary School
+610041,LOCKE J,Josephine C Locke Elementary School
+610043,LOVETT,Joseph Lovett Elementary School
+610044,LOWELL,James Russell Lowell Elementary School
+610046,LYON,Mary Lyon Elementary School
+610047,MADISON,James Madison Elementary School
+610048,MANIERRE,George Manierre Elementary School
+610053,MARQUETTE,Marquette Elementary School
+610051,NORTHWEST,Northwest Middle School
+610052,MANN,Horace Mann Elementary School
+610054,MARSH,John L Marsh Elementary School
+610055,FARADAY,Michael Faraday Elementary School
+610056,MASON,Roswell B Mason Elementary School
+610057,FAIRFIELD,Fairfield Elementary Academy
+610059,MAYER,Oscar Mayer Magnet School
+610060,Chicago World Language Academy,Chicago World Language Academy
+610062,MCCLELLAN,George B McClellan Elementary School
+610063,MCCORMICK,Cyrus H McCormick Elementary School
+610065,TILL,Emmett Louis Till Math and Science Academy
+610066,MCDADE,James E McDade Elementary Classical School
+610067,MCKAY,Francis M McKay Elementary School
+610068,HANSON PARK,Hanson Park Elementary School
+610070,MCPHERSON,James B McPherson Elementary School
+610073,MITCHELL,Ellen Mitchell Elementary School
+610074,MONROE,James Monroe Elementary School
+610081,SHERIDAN,Mark Sheridan Math & Science Academy
+610076,MOOS,Bernhard Moos Elementary School
+610077,MORRILL,Donald Morrill Math & Science Elementary School
+610078,INTER-AMERICAN,Inter-American Elementary Magnet School
+610082,MOUNT GREENWOOD,Mount Greenwood Elementary School
+610084,KELLER,Annie Keller Regional Gifted Center
+610086,MOUNT VERNON,Mount Vernon Elementary School
+610088,MOZART,Wolfgang A Mozart Elementary School
+610089,MURPHY,John B Murphy Elementary School
+610090,MURRAY,Phillip Murray Elementary Language Academy
+610091,BROWN R,Ronald Brown Elementary Community Academy
+610092,NASH,Henry H Nash Elementary School
+610093,NEIL,Jane A Neil Elementary School
+610094,NETTELHORST,Louis Nettelhorst Elementary School
+610095,NEWBERRY,Walter L Newberry Math & Science Academy ES
+610096,NIGHTINGALE,Florence Nightingale Elementary School
+610097,NIXON,William P Nixon Elementary School
+610098,NOBEL,Alfred Nobel Elementary School
+610099,NORWOOD PARK,Norwood Park Elementary School
+610100,WEST PARK,West Park Elementary Academy
+610101,OGDEN ES,William B Ogden Elementary School
+610102,OGLESBY,Richard J Oglesby Elementary School
+610103,OKEEFFE,Isabelle C O'Keeffe Elementary School
+610104,ONAHAN,William J Onahan Elementary School
+610105,ORIOLE PARK,Oriole Park Elementary School
+610106,PICCOLO,Brian Piccolo Elementary Specialty School
+610107,OTIS,James Otis Elementary School
+610108,OTOOLE,Luke O'Toole Elementary School
+610109,OWEN,William Bishop Owen Scholastic Academy ES
+610110,WELLS ES,Ida B Wells Preparatory Elementary Academy
+610111,PALMER,John Palmer Elementary School
+610112,PARKER,Francis W Parker Elementary Community Academy
+610115,PARK MANOR,Park Manor Elementary School
+610116,PARKSIDE,Parkside Elementary Community Academy
+610117,PASTEUR,Louis Pasteur Elementary School
+610120,PECK,Ferdinand Peck Elementary School
+610121,IRVING,Washington Irving Elementary School
+610122,PEIRCE,Helen Peirce International Studies ES
+610123,PENN,William Penn Elementary School
+610124,WASHINGTON H ES,Harold Washington Elementary School
+610125,RUIZ,Irma C Ruiz Elementary School
+610126,PERSHING,John J Pershing Elementary Humanities Magnet
+610127,PETERSON,Mary Gage Peterson Elementary School
+610128,GARVEY,Marcus Moziah Garvey Elementary School
+610129,PICKARD,Josiah Pickard Elementary School
+610130,PIRIE,John T Pirie Fine Arts & Academic Center ES
+610131,PLAMONDON,Ambrose Plamondon Elementary School
+610132,POE,Edgar Allan Poe Elementary Classical School
+610133,WARD L,Laura S Ward Elementary School
+610135,PORTAGE PARK,Portage Park Elementary School
+610136,PRESCOTT,William H Prescott Elementary School
+610137,PRUSSING,Ernst Prussing Elementary School
+610138,PULASKI,Pulaski International School of Chicago
+610139,PULLMAN,George M Pullman Elementary School
+610141,RAVENSWOOD,Ravenswood Elementary School
+610142,RAY,William H Ray Elementary School
+610143,REAVIS,William C Reavis Math & Science Specialty ES
+610144,REILLY,Frank W Reilly Elementary School
+610145,REINBERG,Peter A Reinberg Elementary School
+610146,REVERE,Paul Revere Elementary School
+610147,ROGERS,Philip Rogers Elementary School
+610148,CHAVEZ,Cesar E Chavez Multicultural Academic Center ES
+610152,RUGGLES,Martha Ruggles Elementary School
+610153,RYDER,William H Ryder Math & Science Specialty ES
+610155,SAUGANASH,Sauganash Elementary School
+610157,SAWYER,Sidney Sawyer Elementary School
+610158,SAYRE,Harriet E Sayre Elementary Language Academy
+610159,SCAMMON,Jonathan Y Scammon Elementary School
+610165,SCHUBERT,Franz Peter Schubert Elementary School
+610167,SEWARD,William H Seward Communication Arts Academy ES
+610170,COLUMBIA EXPLORERS,Columbia Explorers Elementary Academy
+610171,MIRELES,Arnold Mireles Elementary Academy
+610172,SHERMAN,William T Sherman Elementary School
+610173,SHERWOOD,Jesse Sherwood Elementary School
+610174,SHIELDS,James Shields Elementary School
+610175,SHOESMITH,Beulah Shoesmith Elementary School
+610176,SHOOP,John D Shoop Math-Science Technical Academy ES
+610177,SKINNER,Mark Skinner Elementary School
+610178,SCHMID,Theophilus Schmid Elementary School
+610179,SMYSER,Washington D Smyser Elementary School
+610180,SMYTH,John M Smyth Elementary School
+610182,SOLOMON,Hannah G Solomon Elementary School
+610183,SPENCER,Spencer Technology Academy
+610199,COLEMON,Johnnie Colemon Elementary Academy
+610184,SPRY ES,John Spry Elementary Community School
+610185,STEVENSON,Adlai E Stevenson Elementary School
+610188,DUNNE,Dunne Technology Academy
+610191,STONE,Stone Elementary Scholastic Academy
+610192,STOWE,Harriet Beecher Stowe Elementary School
+610193,NEW SULLIVAN,William K New Sullivan Elementary School
+610194,SUMNER,Charles Sumner  Math & Science Community Acad ES
+610195,SUTHERLAND,Elizabeth H Sutherland Elementary School
+610196,SWIFT,George B Swift Elementary Specialty School
+610197,TALCOTT,Mancel Talcott Elementary School
+610198,TAYLOR,Douglas Taylor Elementary School
+610200,THORP J,James N Thorp Elementary School
+610201,THORP O,Ole A Thorp Elementary Scholastic Academy
+610202,TILTON,George W Tilton Elementary School
+610203,TONTI,Enrico Tonti Elementary School
+610206,TWAIN,Mark Twain Elementary School
+610207,VANDERPOEL,John H Vanderpoel Elementary Magnet School
+610208,LAVIZZO,Mildred I Lavizzo Elementary School
+610209,VOLTA,Alessandro Volta Elementary School
+610212,ALBANY PARK,Albany Park Multicultural Academy
+610213,WADSWORTH,James Wadsworth Elementary School
+610215,MADERO,Francisco I Madero Middle School
+610216,WALSH,John A Walsh Elementary School
+610217,WARD J,James Ward Elementary School
+610218,WARREN,Joseph Warren Elementary School
+610219,WASHINGTON G ES,George Washington Elementary School
+610220,WATERS,Thomas J Waters Elementary School
+610221,WEBSTER,Daniel Webster Elementary School
+610223,WENTWORTH,Daniel S Wentworth Elementary School
+610225,WHISTLER,John Whistler Elementary School
+610226,SANDOVAL,Socorro Sandoval Elementary School
+610227,WHITNEY,Eli Whitney Elementary School
+610228,WHITTIER,John Greenleaf Whittier Elementary School
+610229,PRITZKER,A.N. Pritzker School
+610230,WILDWOOD,Wildwood IB World Magnet School
+610231,NATIONAL TEACHERS,National Teachers Elementary Academy
+610234,YATES,Richard Yates Elementary School
+610235,YOUNG ES,Ella Flagg Young Elementary School
+610237,BEETHOVEN,Ludwig Van Beethoven Elementary School
+610238,BOND,Carrie Jacobs Bond Elementary School
+610239,DALEY,Richard J Daley Elementary Academy
+610242,BRENNEMANN,Joseph Brennemann Elementary School
+610244,CLARK HS,Michele Clark Academic Prep Magnet High School
+610245,DOUGLASS HS,Frederick A Douglass Academy High School
+610246,BEASLEY,Edward Beasley Elementary Magnet Academic Center
+610248,CHICAGO ACADEMY ES,Chicago Academy Elementary School
+610249,TALMAN,Talman Elementary School
+610250,SALAZAR,Ruben Salazar Elementary Bilingual Center
+610251,CATHER,Willa Cather Elementary School
+610252,DETT,Robert Nathaniel Dett Elementary School
+610254,DVORAK,Dvorak Technology Academy
+610256,ROBINSON,Jackie Robinson Elementary School
+610257,MORTON,Morton School of Excellence
+610263,DULLES,John Foster Dulles Elementary School
+610268,ASHE,Arthur R Ashe Elementary School
+610269,MCCUTCHEON,John T McCutcheon Elementary School
+610271,JENSEN,Jensen Elementary Scholastic Academy
+610274,JOHNSON,James Weldon Johnson Elementary School
+610276,MOLLISON,Irvin C Mollison Elementary School
+610279,TANNER,Henry O Tanner Elementary School
+610281,POWELL,Adam Clayton Powell Paideia Community Academy ES
+610282,MCNAIR,Ronald E McNair Elementary School
+610284,NEW FIELD,New Field Elementary School
+610287,ASHBURN,Ashburn Community Elementary School
+610290,MAYS,Benjamin E Mays Elementary Academy
+610291,LEE,Richard Henry Lee Elementary School
+610293,MELODY,Genevieve Melody Elementary School
+610295,HIGGINS,Thomas J Higgins Elementary Community Academy
+610298,LENART,Lenart Elementary Regional Gifted Center
+610299,KING ES,Dr. Martin L. King Jr Academy of Social Justice
+610300,WESTCOTT,Oliver S Westcott Elementary School
+610304,PHOENIX MILITARY HS,Phoenix Military Academy High School
+610305,LELAND,George Leland Elementary School
+610312,MCDOWELL,Mary E McDowell Elementary School
+610313,DE DIEGO,Jose De Diego Elementary Community Academy
+610315,WHITE,Edward White Elementary Career Academy
+610316,EARHART,Amelia Earhart Options for Knowledge ES
+610317,BRIGHTON PARK,Brighton Park Elementary School
+610319,EVERGREEN,Evergreen Academy Middle School
+610323,BOWEN HS,Bowen High School
+610325,AVONDALE-LOGANDALE,Avondale-Logandale Elementary School
+610329,OROZCO,Orozco Fine Arts & Sciences Elementary School
+610334,RABY HS,Al Raby High School
+610339,STAGG,Amos Alonzo Stagg Elementary School
+610340,CHICAGO ACADEMY HS,Chicago Academy High School
+610342,SABIN,Albert R Sabin Elementary Magnet School
+610345,WOODSON,Carter G Woodson South Elementary School
+610347,CLAREMONT,Claremont Academy Elementary School
+610350,BLACK,Robert A Black Magnet Elementary School
+610352,DURKIN PARK,Durkin Park Elementary School
+610353,CALMECA,Calmeca Academy of Fine Arts and Dual Language
+610354,NORTH RIVER,North River Elementary School
+610355,COURTENAY,Mary E Courtenay Elementary Language Arts Center
+610357,SPRY HS,Spry Community Links High School
+610362,EVERS,Medgar Evers Elementary School
+610363,DISNEY,Walt Disney Magnet Elementary School
+610364,DUBOIS,William E B Dubois Elementary School
+610366,WACKER,Charles H Wacker Elementary School
+610588,RICHARDSON,Robert J. Richardson Middle School
+610367,DEPRIEST,Oscar DePriest Elementary School
+610368,HUGHES L,Langston Hughes Elementary School
+610369,JACKSON M,Mahalia Jackson Elementary School
+610380,WILLIAMS HS,Daniel Hale Williams Prep School of Medicine
+610381,BRONZEVILLE HS,Bronzeville Scholastic Academy High School
+610383,SOCIAL JUSTICE HS,Greater Lawndale High School For Social Justice
+610384,INFINITY HS,Infinity Math Science and Technology High School
+610385,MULTICULTURAL ARTS HIGH SCHOOL,Multicultural Arts High School
+610389,ORR HS,Orr Academy High School
+610390,RICKOVER MILITARY HS,Hyman G Rickover Naval Academy High School
+610391,LINDBLOM HS,Robert Lindblom Math & Science Academy HS
+610392,WORLD LANGUAGE HS,World Language Academy High School
+610394,UPLIFT HS,Uplift Community High School
+610396,TARKINGTON,Tarkington School of Excellence ES
+610405,SUDER,Suder Montessori Magnet ES
+610499,COLLINS HS,Collins Academy High School
+610503,FRAZIER PROSPECTIVE,Frazier Prospective IB Magnet ES
+610513,AIR FORCE HS,Air Force Academy High School
+610515,DISNEY II ES,Disney II Magnet School
+610518,AUSTIN CCA HS,Austin College and Career Academy High School
+610520,LASALLE II,LaSalle II Magnet Elementary School
+610521,DAVIS M,Sir Miles Davis Magnet Elementary Academy
+610523,EDISON PARK,Edison Park Elementary School
+610524,ALCOTT HS,Louisa May Alcott College Preparatory HS
+610529,OGDEN HS,Ogden International High School
+610530,SOUTH SHORE ES,South Shore Fine Arts Academy
+610532,HERNANDEZ,Irene C. Hernandez Middle School for the Advancement of Science
+610533,PRIETO,Dr Jorge Prieto Math and Science
+610534,SKINNER NORTH,Skinner North
+610539,CAMRAS,Marvin Camras Elementary School
+610541,LORCA,Federico Garcia Lorca Elementary School
+610542,WEST RIDGE,West Ridge Elementary School
+610543,SOLORIO HS,Eric Solorio Academy High School
+610544,AZUELA,Mariano Azuela Elementary School
+610547,SOUTH SHORE INTL HS,South Shore Intl College Prep High School
+610548,STEM,STEM Magnet Academy
+610558,GOODE HS,Sarah E. Goode STEM Academy
+610559,SHIELDS MIDDLE,James Shields Middle School
+610561,CRANE MEDICAL HS,Richard T Crane Medical Preparatory HS
+610563,BACK OF THE YARDS HS,Back of the Yards IB HS
+610564,DISNEY II HS,Disney II Magnet High School
+610586,SADLOWSKI,Edward E. Sadlowski Elementary School
+610589,SOR JUANA,Sor Juana Ines de la Cruz ES
+610590,BRONZEVILLE CLASSICAL,Bronzeville Classical Elementary School
+610592,ENGLEWOOD STEM HS,Englewood STEM High School
