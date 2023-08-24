@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import re # regex
 import requests as reqs
+import random
 
 CURRENT_YEAR = 2023 # update this to be the latest year in the data folder
 
@@ -12,10 +13,13 @@ EPR_CSV_LIST = filter(lambda x: x.startswith("employeepositionroster"), os.listd
 
 NO_DATA = "Not found"
 
-DEBUG = True
+DEBUG = False
 def debug(msg):
   if DEBUG:
     print(msg)
+
+ALL_IDS = pd.read_csv("data/ids-to-names.csv")["School_ID"].values.tolist()
+ALL_HS_IDS = pd.read_csv("data/ids-to-names-hs.csv")["School_ID"].values.tolist()
 
 # this formats all files the same way
 # this was only needed for the 2014-2016 files and shouldn't be needed for 
@@ -132,6 +136,91 @@ def full_school_report(sy, filters, id):
 
   return out
 
+def current_year_report(sy, filters, id):
+  """
+  Report on all salary info and some info on performance metrics
+
+  This is pretty sloppy :/ oh well
+
+  ignores the sy argument, but it's needed in order to have the correct
+  function signature
+  """
+  main_filter = school_employees(id)
+
+  df_exists = True
+  df_in = pd.read_csv(f"data/employeepositionroster_{CURRENT_YEAR}-06-30.csv")
+  if not (get_dept_id(id) in df_in["Dept ID"].unique()):
+    df_exists = False
+
+  prev_df_exists = True
+  if sy == 2014:
+    prev_df_exists = False
+  else:
+    prev_df = pd.read_csv(f"data/employeepositionroster_{CURRENT_YEAR-1}-06-30.csv")
+    if not (get_dept_id(id) in prev_df["Dept ID"].unique()):
+      prev_df_exists = False
+  
+  json_exists = True
+  res = reqs.get(f"{SCHOOL_PROFILE_URL}SingleSchoolProfile?SchoolID={id}")
+  json = res.json()
+  if len(json) < 1:
+    json_exists = False
+
+  df = filter(df_in, main_filter)
+
+  #df["Annual Salary"] = df["Annual Salary"].astype(float)
+  df = df.dropna()
+  df = df.sort_values("Annual Salary", ascending=False)
+
+  teachers = filter(df, TEACHERS)
+
+  teacher_filter = combine_filters(main_filter, TEACHERS)
+
+  if df_exists and prev_df_exists:
+    main_turn_rate = get_turnover_rate(sy, main_filter)
+    teacher_turn_rate = get_turnover_rate(sy, teacher_filter)
+
+  out = {}
+  if df_exists:
+    out["Average Salary"] = round(df["Annual Salary"].mean(), 1)
+    out["Highest Salary"] = to_float(df["Annual Salary"].iat[0])
+    out["Lowest Salary"] = to_float(df["Annual Salary"].iat[-1])
+    out["Average Teacher Salary"] = round(teachers["Annual Salary"].mean(), 1)
+  else:
+    out["Average Salary"] = NO_DATA
+    out["Highest Salary"] = NO_DATA
+    out["Lowest Salary"] = NO_DATA
+    out["Average Teacher Salary"] = NO_DATA
+
+  if df_exists and prev_df_exists:
+    out["Job Turnover Rate"] = round(main_turn_rate * 100, 1)
+    out["Teacher Turnover Rate"] = round(teacher_turn_rate * 100, 1)
+  else:
+    out["Job Turnover Rate"] = NO_DATA
+    out["Teacher Turnover Rate"] = NO_DATA
+
+  if json_exists:
+    out["Attendance Rate"] = to_float(json["AttendanceRateCurrentYear"])
+    out["College Enrollment Rate"] = to_float(json["CollegeEnrollmentRate"])
+    out["4 Year Graduation Rate"] = to_float(json["GraduationRate4Year"])
+    debug(f'{id} - {json["GraduationRate4Year"]}')
+    out["SAT Average"] = to_float(json["SATSchoolAverage"])
+    #out["ISAT Composite Score Meets/Exceeds"] = to_float(json[0]["ISAT_CompositeMeetsExceeds_Mean"])
+    #out["PSAE Composite Score Meets/Exceeds"] = to_float(json[0]["PSAE_CompositeMeetsExceeds_Mean"])
+  else:
+    out["Attendance Rate"] = NO_DATA
+    out["College Enrollment Rate"] = NO_DATA
+    out["4 Year Graduation Rate"] = NO_DATA
+    out["SAT Average"] = NO_DATA
+    #out["ISAT Composite Score Meets/Exceeds"] = NO_DATA
+    #out["PSAE Composite Score Meets/Exceeds"] = NO_DATA
+
+  # The ISAT and PSAE ones appear to be the same for every school every year
+  # which is why they are commented out at the moment
+
+  return out
+
+
 def get_turnover_rate(sy, filters):
   """
   Returns the rate (as a fraction) of job turnovers from sy-1 to sy
@@ -160,6 +249,8 @@ def get_turnover_rate(sy, filters):
   compare = new_prev.merge(new_curr, on=['Pos #', 'Last'], how="left", indicator="Exist")
   num_left = len(compare[compare["Exist"] == "left_only"])
   num_total = len(new_prev)
+
+  if num_total == 0: return 1
 
   return (num_left / num_total)
 
@@ -276,6 +367,17 @@ def safe_round(*args):
     pass
   return out
 
+def round_if_number(*args):
+  """
+  Rounds the number, or returns the original input (args[0]) if not a number
+  """
+  out = args[0]
+  try:
+    out = round(*args)
+  except:
+    pass
+  return out
+
 def trends(dc):
   """
   Expects a dictionary whose keys are dates, specifically 20YY-06-30
@@ -366,7 +468,7 @@ def pretty_print_dict_r(dc, prevkey, indent):
     if type(val) is dict:
       pretty_print_dict_r(val, key, indent + 2)
     else:
-      print((" " * indent) + key + ": " + str(val) + ",")
+      print((" " * indent) + key + ": " + str(round_if_number(val, 2)) + ",")
   print((" " * (indent - 2)) + "},")
 
 def get_dept_id(school_id):
@@ -418,4 +520,114 @@ def get_name_from_id(id):
   df = pd.read_csv("data/ids-to-names.csv")
   return df.loc[df["SchoolID"] == id]["SchoolLongName"].iat[0]
 
-pretty_print_dict(analyze(full_school_report, {}, 609755))
+def main_func(id):
+  pretty_print_dict(analyze(full_school_report, {}, id))
+
+#main_func(609755)
+
+def compare_schools(ids):
+  """
+  ** UNTESTED **
+
+  The way I used of calculating correllation is a bit sloppy and doesn't
+  necessarily correspond to an exact statistical correllation
+
+  Compares multiple schools. Creates a dictionary saying which of the schools
+  has the highest number in that category, and then returns a dictionary saying,
+  for each stat, which stats there is a correlation to. In other words, if a
+  school was the highest in a certain stat, what other stats was it the highest
+  in?
+
+  Also returns a dict full of inverse correlations -- if a school was highest in
+  a certain stat, which other stats was it the lowest in?
+  """
+  dicts = {}
+  for id in ids:
+    dicts[id] = current_year_report(CURRENT_YEAR, {}, id)
+
+  highests = {}
+  lowests = {}
+  for id, dc in dicts.items():
+    for key, val in dc.items():
+      if val == NO_DATA: continue
+      if not (key in highests.keys()):
+        highests[key] = (val, id)
+        lowests[key] = (val, id)
+      if float(val) > highests[key][0]:
+        highests[key] = (val, id)
+      if float(val) < lowests[key][0]:
+        lowests[key] = (val, id)
+
+  matches = {}
+  matches_inverse = {}
+  for key, val in highests.items():
+    matches[key] = []
+    matches_inverse[key] = []
+    for key2, val2 in highests.items():
+      if key == key2: continue
+      if val[1] == val2[1]: matches[key].append(key2)
+      
+    for key2, val2 in lowests.items():
+      if key == key2: continue
+      if val[1] == val2[1]: matches_inverse[key].append(key2)
+  
+  for key, val in lowests.items():
+    for key2, val2 in highests.items():
+      if key == key2: continue
+      if val[1] == val2[1]: matches_inverse[key].append(key2)
+
+    for key2, val2 in lowests.items():
+      if key == key2: continue
+      if val[1] == val2[1]: matches[key].append(key2)
+  
+  return (matches, matches_inverse)
+
+def run_comparisons(times):
+  """
+  ** UNTESTED **
+
+  Runs a bunch of comparisons to measure correlations between different
+  stats
+
+  Warning: this function is slow. it seems to take about 5000ms (5s) per run
+  This probably depends on the quality of your connection, mine was good but not
+  amazing when I tested it
+  """
+  out = {}
+  first = True
+
+  for _ in range(times):
+
+    print(f'runs done: {_}')
+
+    ids = []
+    while len(ids) < 4:
+      id = random.choice(ALL_HS_IDS)
+      if not (id in ids):
+        ids.append(id)
+    
+    (matches, matches_inverse) = compare_schools(ids)
+    
+    for key, val in matches.items():
+      if not (f'{key}_pos' in out.keys()):
+        out[f'{key}_pos'] = {}
+        out[f'{key}_neg'] = {}
+      for ele in val:
+        if ele in out[f'{key}_pos'].keys():
+          out[f'{key}_pos'][ele] += (.5 / times)
+        else:
+          out[f'{key}_pos'][ele] = (.5 / times)
+    
+    for key, val in matches_inverse.items():
+      if not (f'{key}_pos' in out.keys()):
+        out[f'{key}_pos'] = {}
+        out[f'{key}_neg'] = {}
+      for ele in val:
+        if ele in out[f'{key}_neg'].keys():
+          out[f'{key}_neg'][ele] += (.5 / times)
+        else:
+          out[f'{key}_neg'][ele] = (.5 / times)
+    
+  return out
+
+pretty_print_dict(run_comparisons(200))
