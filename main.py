@@ -630,4 +630,4 @@ def run_comparisons(times):
     
   return out
 
-pretty_print_dict(run_comparisons(200))
+pretty_print_dict(run_comparisons(10))
