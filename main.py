@@ -4,6 +4,8 @@ import re # regex
 import requests as reqs
 import random
 
+import numpy
+
 from helpers import *
 from constants import *
 
@@ -99,6 +101,7 @@ def full_school_report(sy, filters, id):
     #out["PSAE Composite Score Meets/Exceeds"] = NO_DATA
 
   # The ISAT and PSAE ones appear to be the same for every school every year
+  # (at least recently)
   # which is why they are commented out at the moment
 
   return out
@@ -387,4 +390,30 @@ def run_comparisons(times):
     
   return out
 
-pretty_print_dict(run_comparisons(10))
+def find_correlation(sy):
+  """
+  Finds the corellation matrix for all the stats calculated by full_school_report
+
+  ^ for the given school year
+  """
+  arrs = []
+  headers = []
+  for id in ALL_HS_IDS:
+    report = full_school_report(sy, {}, id)
+    if NO_DATA in report.values():
+      continue
+    i = 0
+    for key, val in report.items():
+      if len(arrs) <= i:
+        arrs.append([ float(val) ])
+        headers.append([ key ])
+      else:
+        arrs[i].append(float(val))
+      i += 1
+
+  return {
+    "headers": headers,
+    "cov_matrix": numpy.corrcoef(arrs)
+  }
+
+pretty_print_dict(find_correlation(CURRENT_YEAR))
