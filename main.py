@@ -5,6 +5,9 @@ import requests as reqs
 import random
 
 import numpy
+import sklearn
+
+import matplotlib.pyplot as plt
 
 from helpers import *
 from constants import *
@@ -280,11 +283,6 @@ def search(name):
     print(f"{entry['SchoolLongName']} ({entry['SchoolID']})")
   return
 
-def main_func(id):
-  pretty_print_dict(analyze(full_school_report, {}, id))
-
-#main_func(609755)
-
 def compare_schools(ids):
   """
   ** UNTESTED **
@@ -416,4 +414,66 @@ def find_correlation(sy):
     "cov_matrix": numpy.corrcoef(arrs)
   }
 
-pretty_print_dict(find_correlation(CURRENT_YEAR))
+ccy_matrix = None # so we can memoize it later
+def correlation_current_year(sy):
+  """
+  Same as find correlation, but only for the current year
+  current year has some statistics that aren't available for previous years
+  that could be helpful
+
+  Takes an sy argument but ignores it, it's just needed to give the function the
+  right signature
+  """
+  plots = True # change this to show/hide plots
+
+  arrs = []
+  headers = []
+  for id in ALL_HS_IDS:
+    report = current_year_report(sy, {}, id)
+    if NO_DATA in report.values():
+      continue
+    if report["Average Salary"] < 50000:
+      continue
+    i = 0
+    for key, val in report.items():
+      if len(arrs) <= i:
+        arrs.append([ float(val) ])
+        headers.append([ key ])
+      else:
+        arrs[i].append(float(val))
+      i += 1
+
+  for i in range(0, len(arrs)):
+    for j in range(i + 1, len(arrs)):
+      plt.scatter(arrs[i], arrs[j])
+      plt.xlabel(headers[i])
+      plt.ylabel(headers[j])
+      plt.show()
+
+  return {
+    "headers": headers,
+    "cov_matrix": numpy.corrcoef(arrs)
+  }
+
+def predict(id, target):
+  """
+  Predicts what the school's stats would look like if the target stat was
+  changed to its value
+
+  target should be a tuple of form (key, val)
+  """
+
+  report = current_year_report(CURRENT_YEAR, {}, id)
+  if not target[0] in report.keys():
+    print("Invalid target statistic")
+    return
+  print(f"Current stats for {get_name_from_id(id)}:")
+  pretty_print_dict(report)
+
+  if (ccy_matrix is None):
+    ccy_matrix = correlation_current_year(CURRENT_YEAR)
+  
+  # now we need the slope
+  
+
+pretty_print_dict(correlation_current_year(CURRENT_YEAR))
