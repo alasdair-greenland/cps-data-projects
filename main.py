@@ -6,6 +6,7 @@ import random
 
 import numpy
 import sklearn
+import scipy
 
 import matplotlib.pyplot as plt
 
@@ -404,7 +405,7 @@ def find_correlation(sy):
     for key, val in report.items():
       if len(arrs) <= i:
         arrs.append([ float(val) ])
-        headers.append([ key ])
+        headers.append(key)
       else:
         arrs[i].append(float(val))
       i += 1
@@ -414,7 +415,7 @@ def find_correlation(sy):
     "cov_matrix": numpy.corrcoef(arrs)
   }
 
-ccy_matrix = None # so we can memoize it later
+ccy_output = None # so we can memoize it later
 def correlation_current_year(sy):
   """
   Same as find correlation, but only for the current year
@@ -424,7 +425,7 @@ def correlation_current_year(sy):
   Takes an sy argument but ignores it, it's just needed to give the function the
   right signature
   """
-  plots = True # change this to show/hide plots
+  plots = False # change this to show/hide plots
 
   arrs = []
   headers = []
@@ -438,21 +439,37 @@ def correlation_current_year(sy):
     for key, val in report.items():
       if len(arrs) <= i:
         arrs.append([ float(val) ])
-        headers.append([ key ])
+        headers.append(key)
       else:
         arrs[i].append(float(val))
       i += 1
 
+  print("Done creating reports!")
+
+  if plots:
+    for i in range(0, len(arrs)):
+      for j in range(i + 1, len(arrs)):
+        plt.scatter(arrs[i], arrs[j])
+        plt.xlabel(headers[i])
+        plt.ylabel(headers[j])
+        plt.show()
+    print("Done with plots!")
+  
+  curves = [ [ None ] * len(arrs) ] * len(arrs)
   for i in range(0, len(arrs)):
-    for j in range(i + 1, len(arrs)):
-      plt.scatter(arrs[i], arrs[j])
-      plt.xlabel(headers[i])
-      plt.ylabel(headers[j])
-      plt.show()
+    for j in range(0, len(arrs)):
+      if i == j: continue
+      if MATCHES_ARR[i][j] is None: continue
+      # curves[i][j] = scipy.optimize.curve_fit(MATCHES_ARR[i][j], arrs[i], arrs[j])
+      curves[i][j] = scipy.optimize.curve_fit(linear, arrs[i], arrs[j])
+      
+  
+  print("Done creating curves!")
 
   return {
     "headers": headers,
-    "cov_matrix": numpy.corrcoef(arrs)
+    "cov_matrix": numpy.corrcoef(arrs),
+    "curves_matrix": curves
   }
 
 def predict(id, target):
@@ -461,19 +478,62 @@ def predict(id, target):
   changed to its value
 
   target should be a tuple of form (key, val)
+
+  corr is the object returned by correlation_current_year
   """
 
   report = current_year_report(CURRENT_YEAR, {}, id)
+  corr = correlation_current_year(CURRENT_YEAR)
+  print("Done with correlation function!")
+  if len(target) != 2:
+    print("Invalid format for target")
+    return
   if not target[0] in report.keys():
     print("Invalid target statistic")
     return
   print(f"Current stats for {get_name_from_id(id)}:")
   pretty_print_dict(report)
 
-  if (ccy_matrix is None):
-    ccy_matrix = correlation_current_year(CURRENT_YEAR)
+  prediction = report.copy()
+  prediction[target[0]] = target[1]
+  def propogate_prediction_r(updated, target):
+    # updates all predictions based on the new target value
+    # only predicts for relationships we have curves for
+    if len(updated) >= len(prediction.keys()):
+      return
+    delta = target[1] - report[target[0]]
+    targets = []
+    for key, val in prediction.items():
+      if key == target[0]:
+        continue
+      if key in updated:
+        continue
+      idx_i = corr["headers"].index(target[0])
+      idx_j = corr["headers"].index(key)
+      curve = corr["curves_matrix"][idx_i][idx_j]
+      slope = curve[0]
+      failed = False
+      while not failed:
+        try:
+          slope = slope[0]
+        except:
+          failed = True
+      #print(f'slope: {slope}')
+      #print(f'delta: {delta}')
+      prediction[key] = val + slope * delta
+      targets.append((key, delta * slope))
+      updated.append(key)
+    for target_ in targets:
+      propogate_prediction_r(updated, target_)
   
-  # now we need the slope
-  
+  propogate_prediction_r([target[0]], target)
 
-pretty_print_dict(correlation_current_year(CURRENT_YEAR))
+  print(f"Targetted value: {target}")
+  print("Prediction: ")
+  pretty_print_dict(prediction)
+
+ccy_output = correlation_current_year(CURRENT_YEAR)
+
+pretty_print_dict(current_year_report(CURRENT_YEAR, {}, 609755))
+
+predict(609755, ("Average Salary", 85000))

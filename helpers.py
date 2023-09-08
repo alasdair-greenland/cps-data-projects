@@ -3,6 +3,7 @@ import os
 import re # regex
 import requests as reqs
 import random
+import math
 
 from constants import *
 
@@ -198,7 +199,10 @@ def get_dept_id(school_id):
   querying the employee position roster data
   """
   res = reqs.get(f'{SCHOOL_PROFILE_URL}SingleSchoolProfile?SchoolID={school_id}')
-  return res.json()["FinanceID"]
+  json = res.json()
+  if type(json) == str:
+    return NO_DATA
+  return json["FinanceID"]
 
 def school_employees(school_id):
   """
@@ -221,7 +225,34 @@ def combine_filters(*filters):
 
 def get_name_from_id(id):
   df = pd.read_csv("data/ids-to-names.csv")
-  return df.loc[df["SchoolID"] == id]["SchoolLongName"].iat[0]
+  return df.loc[df["School_ID"] == id]["Long_Name"].iat[0]
+
+def linear(x, a, b):
+  """
+  Used to do curve fits
+  """
+  return x * a + b
+
+def logistic(x, a, b, c):
+  """
+  Used to do curve fits
+  """
+  return (a / (1 + (math.e ** (b * (x - c)))))
+
+# This is a constant but I'm using helpers functions in the definition
+# that's why it's in this file
+MATCHES_ARR = [
+  [ None, linear, None, linear, None, linear, logistic, logistic, logistic, None ],
+  [ linear, None, None, None, None, None, logistic, logistic, logistic, None ],
+  [ None, None, None, None, linear, linear, logistic, logistic, linear, None ],
+  [ linear, None, None, None, linear, linear, logistic, logistic, logistic, linear ],
+  [ None, None, linear, linear, None, linear, linear, linear, linear, linear ],
+  [ linear, None, linear, linear, linear, None, logistic, logistic, logistic, logistic ],
+  [ logistic, logistic, logistic, logistic, linear, logistic, None, linear, linear, logistic ],
+  [ logistic, logistic, logistic, logistic, linear, logistic, linear, None, linear, logistic ],
+  [ logistic, logistic, linear, logistic, linear, logistic, linear, linear, None, logistic ],
+  [ None, None, None, linear, logistic, logistic, logistic, logistic, logistic, None ]
+]
 
 # this formats all files the same way
 # this was only needed for the 2014-2016 files and shouldn't be needed for 
