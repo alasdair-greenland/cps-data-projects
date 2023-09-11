@@ -4,6 +4,12 @@ import re # regex
 import requests as reqs
 import random
 
+import numpy
+import sklearn
+import scipy
+
+import matplotlib.pyplot as plt
+
 from helpers import *
 from constants import *
 
@@ -99,6 +105,7 @@ def full_school_report(sy, filters, id):
     #out["PSAE Composite Score Meets/Exceeds"] = NO_DATA
 
   # The ISAT and PSAE ones appear to be the same for every school every year
+  # (at least recently)
   # which is why they are commented out at the moment
 
   return out
@@ -277,11 +284,6 @@ def search(name):
     print(f"{entry['SchoolLongName']} ({entry['SchoolID']})")
   return
 
-def main_func(id):
-  pretty_print_dict(analyze(full_school_report, {}, id))
-
-#main_func(609755)
-
 def compare_schools(ids):
   """
   ** UNTESTED **
@@ -387,4 +389,151 @@ def run_comparisons(times):
     
   return out
 
-pretty_print_dict(run_comparisons(200))
+def find_correlation(sy):
+  """
+  Finds the corellation matrix for all the stats calculated by full_school_report
+
+  ^ for the given school year
+  """
+  arrs = []
+  headers = []
+  for id in ALL_HS_IDS:
+    report = full_school_report(sy, {}, id)
+    if NO_DATA in report.values():
+      continue
+    i = 0
+    for key, val in report.items():
+      if len(arrs) <= i:
+        arrs.append([ float(val) ])
+        headers.append(key)
+      else:
+        arrs[i].append(float(val))
+      i += 1
+
+  return {
+    "headers": headers,
+    "cov_matrix": numpy.corrcoef(arrs)
+  }
+
+ccy_output = None # so we can memoize it later
+def correlation_current_year(sy):
+  """
+  Same as find correlation, but only for the current year
+  current year has some statistics that aren't available for previous years
+  that could be helpful
+
+  Takes an sy argument but ignores it, it's just needed to give the function the
+  right signature
+  """
+  plots = False # change this to show/hide plots
+
+  arrs = []
+  headers = []
+  for id in ALL_HS_IDS:
+    report = current_year_report(sy, {}, id)
+    if NO_DATA in report.values():
+      continue
+    if report["Average Salary"] < 50000:
+      continue
+    i = 0
+    for key, val in report.items():
+      if len(arrs) <= i:
+        arrs.append([ float(val) ])
+        headers.append(key)
+      else:
+        arrs[i].append(float(val))
+      i += 1
+
+  print("Done creating reports!")
+
+  if plots:
+    for i in range(0, len(arrs)):
+      for j in range(i + 1, len(arrs)):
+        plt.scatter(arrs[i], arrs[j])
+        plt.xlabel(headers[i])
+        plt.ylabel(headers[j])
+        plt.show()
+    print("Done with plots!")
+  
+  curves = [ [ None ] * len(arrs) ] * len(arrs)
+  for i in range(0, len(arrs)):
+    for j in range(0, len(arrs)):
+      if i == j: continue
+      if MATCHES_ARR[i][j] is None: continue
+      # curves[i][j] = scipy.optimize.curve_fit(MATCHES_ARR[i][j], arrs[i], arrs[j])
+      curves[i][j] = scipy.optimize.curve_fit(linear, arrs[i], arrs[j])
+      
+  
+  print("Done creating curves!")
+
+  return {
+    "headers": headers,
+    "cov_matrix": numpy.corrcoef(arrs),
+    "curves_matrix": curves
+  }
+
+def predict(id, target):
+  """
+  Predicts what the school's stats would look like if the target stat was
+  changed to its value
+
+  target should be a tuple of form (key, val)
+
+  corr is the object returned by correlation_current_year
+  """
+
+  report = current_year_report(CURRENT_YEAR, {}, id)
+  corr = correlation_current_year(CURRENT_YEAR)
+  print("Done with correlation function!")
+  if len(target) != 2:
+    print("Invalid format for target")
+    return
+  if not target[0] in report.keys():
+    print("Invalid target statistic")
+    return
+  print(f"Current stats for {get_name_from_id(id)}:")
+  pretty_print_dict(report)
+
+  prediction = report.copy()
+  prediction[target[0]] = target[1]
+  def propogate_prediction_r(updated, target):
+    # updates all predictions based on the new target value
+    # only predicts for relationships we have curves for
+    if len(updated) >= len(prediction.keys()):
+      return
+    delta = target[1] - report[target[0]]
+    targets = []
+    for key, val in prediction.items():
+      if key == target[0]:
+        continue
+      if key in updated:
+        continue
+      idx_i = corr["headers"].index(target[0])
+      idx_j = corr["headers"].index(key)
+      curve = corr["curves_matrix"][idx_i][idx_j]
+      slope = curve[0]
+      failed = False
+      while not failed:
+        try:
+          slope = slope[0]
+        except:
+          failed = True
+      #print(f'slope: {slope}')
+      #print(f'delta: {delta}')
+      prediction[key] = val + slope * delta
+      targets.append((key, delta * slope))
+      updated.append(key)
+    for target_ in targets:
+      propogate_prediction_r(updated, target_)
+  
+  propogate_prediction_r([target[0]], target)
+
+  print(f"Targetted value: {target}")
+  print("Prediction: ")
+  pretty_print_dict(prediction)
+
+ccy_output = correlation_current_year(CURRENT_YEAR)
+
+pretty_print_dict(current_year_report(CURRENT_YEAR, {}, 609755))
+
+predict(609755, ("Average Salary", 85000))
