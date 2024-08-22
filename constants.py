@@ -4,7 +4,7 @@ import re # regex
 import requests as reqs
 import random
 
-CURRENT_YEAR = 2023 # update this to be the latest year in the data folder
+CURRENT_YEAR = 2024 # update this to be the latest year in the data folder
 
 SCHOOL_PROFILE_URL = "https://api.cps.edu/schoolprofile/CPS/"
 

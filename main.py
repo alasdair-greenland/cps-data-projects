@@ -5,7 +5,6 @@ import requests as reqs
 import random
 
 import numpy
-import sklearn
 import scipy
 
 import matplotlib.pyplot as plt
@@ -25,11 +24,16 @@ def salary_report(sy, filters):
   df = df.dropna()
   df = df.sort_values("Annual Salary", ascending=False)
   # sort table by the annual salary of the employees
+  lowest_sal = df["Annual Salary"].iat[-1]
+  i = 2
+  while lowest_sal == 0.0:
+    lowest_sal = to_float(df["Annual Salary"].iat[0 - i])
+    i += 1
   return {
     "Average Salary": df["Annual Salary"].mean(),
     "Highest Salary": df["Annual Salary"].iat[0],
     "Highest Paid Position No.": df["Pos #"].iat[0],
-    "Lowest Salary": df["Annual Salary"].iat[-1],
+    "Lowest Salary": lowest_sal,
     "Lowest Paid Position No.": df["Pos #"].iat[-1]
   }
 
@@ -79,6 +83,10 @@ def full_school_report(sy, filters, id):
     out["Average Salary"] = round(df["Annual Salary"].mean(), 1)
     out["Highest Salary"] = to_float(df["Annual Salary"].iat[0])
     out["Lowest Salary"] = to_float(df["Annual Salary"].iat[-1])
+    i = 2
+    while out["Lowest Salary"] == 0.0:
+      out["Lowest Salary"] = to_float(df["Annual Salary"].iat[0 - i])
+      i += 1
     out["Average Teacher Salary"] = round(teachers["Annual Salary"].mean(), 1)
   else:
     out["Average Salary"] = NO_DATA
@@ -159,6 +167,10 @@ def current_year_report(sy, filters, id):
     out["Average Salary"] = round(df["Annual Salary"].mean(), 1)
     out["Highest Salary"] = to_float(df["Annual Salary"].iat[0])
     out["Lowest Salary"] = to_float(df["Annual Salary"].iat[-1])
+    i = 2
+    while out["Lowest Salary"] == 0.0:
+      out["Lowest Salary"] = to_float(df["Annual Salary"].iat[0 - i])
+      i += 1
     out["Average Teacher Salary"] = round(teachers["Annual Salary"].mean(), 1)
   else:
     out["Average Salary"] = NO_DATA
@@ -309,6 +321,7 @@ def compare_schools(ids):
   for id, dc in dicts.items():
     for key, val in dc.items():
       if val == NO_DATA: continue
+      if val == 0: continue
       if not (key in highests.keys()):
         highests[key] = (val, id)
         lowests[key] = (val, id)
@@ -532,8 +545,10 @@ def predict(id, target):
   print("Prediction: ")
   pretty_print_dict(prediction)
 
-ccy_output = correlation_current_year(CURRENT_YEAR)
+#ccy_output = correlation_current_year(CURRENT_YEAR)
 
-pretty_print_dict(current_year_report(CURRENT_YEAR, {}, 609755))
+#pretty_print_dict(current_year_report(CURRENT_YEAR, {}, 609755))
 
-predict(609755, ("Average Salary", 85000))
+#predict(609755, ("Average Salary", 85000))
+
+pretty_print_dict(analyze(salary_report, TEACHERS))

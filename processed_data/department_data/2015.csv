@@ -1,0 +1,658 @@
+Dept ID,Department,Network,Total Staff,Teaching Staff,Total Staff Budget,Teaching Staff Budget,Students,Teacher Spending Per Student
+2411,Network 1,,10,0,888187,0,0,0.0
+2421,Network 2,,10,0,847052,0,0,0.0
+2431,Network 3,,13,0,1092412,0,0,0.0
+2441,Network 4,,10,0,770957,0,0,0.0
+2451,Network 5,,11,0,990650,0,0,0.0
+2461,Network 6,,10,0,925023,0,0,0.0
+2471,Network 7,,11,0,936702,0,0,0.0
+2481,Network 8,,10,0,840379,0,0,0.0
+2491,Network 9,,11,0,1075874,0,0,0.0
+2501,Network 10,,10,0,1023652,0,0,0.0
+2511,Network 11,,13,0,1351642,0,0,0.0
+2521,Network 12,,10,0,941342,0,0,0.0
+2531,Network 13,,10,0,1055988,0,0,0.0
+5261,Department of JROTC,,15,0,995800,0,0,0.0
+5281,Office of Education Options,,39,11,2178846,652742,0,0.0
+10110,Board of Trustees,,8,0,676072,0,0,0.0
+10210,Law Office,,75,0,5513517,0,0,0.0
+10320,Inspector General,,17,0,1309675,0,0,0.0
+10410,Chief Executive Officer,,1,0,0,0,0,0.0
+10415,Chief Operating Officer,,4,0,385000,0,0,0.0
+10430,Department of Audit Services,,7,0,418792,0,0,0.0
+10450,Intergovernmental Relations,,15,0,1121522,0,0,0.0
+10510,Communications Office,,22,0,1637058,0,0,0.0
+10610,School Safety and Security Office,,48,0,2686442,0,0,0.0
+10615,Safety and Security - City Wide,,174,0,5933626,0,0,0.0
+10710,Chief of Staff,,12,0,824835,0,0,0.0
+10810,Teaching and Learning Office,,15,0,1310915,0,0,0.0
+10825,Professional Learning Office,,18,0,1314746,0,0,0.0
+10845,"Magnet, Gifted and IB Programs",,8,0,668990,0,0,0.0
+10850,Counseling and Postsecondary Advising,,16,1,1104427,93614,0,0.0
+10855,Counseling and Postsecondary Advising - City Wide,,33,0,1198982,0,0,0.0
+10870,College and Career Success Office,,8,0,763309,0,0,0.0
+10890,Arts,,8,0,395500,0,0,0.0
+10895,Social and Emotional Learning,,19,0,1264686,0,0,0.0
+10898,Social and Emotional Learning - City Wide,,17,1,1462959,91859,0,0.0
+10910,LSC Relations,,19,0,1257715,0,0,0.0
+11010,Talent Office,,128,0,6686548,0,0,0.0
+11070,Talent Office - City Wide,,85,2,1893869,213910,0,0.0
+11110,Network Support,,17,0,1459392,0,0,0.0
+11116,AUSL Program Support,,114,105,8025915,7056186,0,0.0
+11201,Access and Enrollment,,15,0,1026935,0,0,0.0
+11210,Assessment,,8,0,589275,0,0,0.0
+11360,Early Childhood Development,,14,0,1014283,0,0,0.0
+11371,Student Support and Engagement,,57,3,3558278,145693,0,0.0
+11385,Early Childhood Development - City Wide,,112,6,5806850,0,0,0.0
+11510,Language and Cultural Education,,10,0,606300,0,0,0.0
+11540,Language & Cultural Education - City Wide,,35,0,659551,0,0,0.0
+11551,Instructional Supports,,5,0,456766,0,0,0.0
+11610,Diverse Learner Supports & Services,,79,0,6382309,0,0,0.0
+11671,ODLSS Instructional Supports: Access & Opportunities,,39,0,2548938,0,0,0.0
+11672,ODLSS Instructional Supports: Diverse-Learner Supports,,82,16,6128100,1419680,0,0.0
+11673,ODLSS Instructional Supports: Specially-Designed Instruction,,78,0,5301000,0,0,0.0
+11674,ODLSS Instructional Supports: Network Supports,,44,0,3725882,0,0,0.0
+11675,Diverse Learner Supports & Services - Related Services Supports - City Wide,,1298,0,88970668,0,0,0.0
+11860,Facility Operations & Maintenance,,22,0,1807325,0,0,0.0
+11870,Student Transportation,,47,0,2542286,0,0,0.0
+11880,Facility Opers & Maint - City Wide,,1409,0,73095550,0,0,0.0
+11890,CPS Warehouse - City Wide,,29,0,1842742,0,0,0.0
+11910,Real Estate,,5,0,342308,0,0,0.0
+11940,School Transportation - City Wide,,800,0,11481427,0,0,0.0
+12010,Nutrition Support Services,,28,0,1765013,0,0,0.0
+12050,Nutrition Support Services - City Wide,,230,0,4226470,0,0,0.0
+12150,Capital/Operations - City Wide,,9,0,532550,0,0,0.0
+12210,Procurement and Contracts Office,,22,0,1403181,0,0,0.0
+12280,Business Diversity,,4,0,317397,0,0,0.0
+12310,Chief Financial Officer,,2,0,227500,0,0,0.0
+12410,Corporate Accounting,,32,0,1832770,0,0,0.0
+12420,Children and Family Benefits Unit,,12,0,525510,0,0,0.0
+12430,Accounts Payable,,13,0,665747,0,0,0.0
+12440,Treasury,,7,0,623084,0,0,0.0
+12450,Payroll Services,,31,0,1906906,0,0,0.0
+12460,Risk Management,,5,0,113653,0,0,0.0
+12510,Information & Technology Services,,163,0,12128736,0,0,0.0
+12610,Budget & Management Office,,27,0,1996242,0,0,0.0
+12620,Grant Funded Programs Office,,27,0,1486272,0,0,0.0
+12625,Grant Funded Programs Office - City Wide,,10,0,518198,0,0,0.0
+12670,Education General - City Wide,,115,86,5575131,4830494,0,0.0
+13610,Innovation and Incubation,,21,0,1611163,0,0,0.0
+13700,Literacy,,20,0,1222906,0,0,0.0
+13716,Science,,5,0,345098,0,0,0.0
+13717,Mathematics,,8,0,616302,0,0,0.0
+13725,Early College and Career,,33,0,2397102,0,0,0.0
+13727,Early College and Career - City Wide,,5,0,329500,0,0,0.0
+13737,Sports Administration and Facilities Management - City Wide,,10,0,844754,0,0,0.0
+13740,Office of Strategic School Support Services,,13,0,686312,0,0,0.0
+13745,Office of Strategic School Support Services - City Wide,,12,0,839731,0,0,0.0
+14010,Chief Administrative Officer,,3,0,280000,0,0,0.0
+14040,External Affairs and Partnerships,,4,0,283800,0,0,0.0
+14050,Office of Student Health & Wellness,,69,0,3446212,0,0,0.0
+14060,Family & Community Engagement Office,,35,0,2219565,0,0,0.0
+15010,School Support Center,,38,0,2299337,0,0,0.0
+15500,Strategy Management Office,,11,0,548110,0,0,0.0
+16050,Accountability,,33,0,2294619,0,0,0.0
+20071,Columbia Explorers Academy,ISP,99,58,5039809,3696639,645,5731.19
+22021,Jane Addams School,Network 13,70,47,4885358,3905183,516,7568.22
+22031,Louis J Agassiz School,Network 4,64,35,4006076,2591743,339,7645.26
+22041,Louisa May Alcott School,Network 4,95,59,5976285,4327054,548,7896.07
+22061,Philip D Armour School,ISP,41,24,2275066,1591092,241,6602.07
+22071,New Field School,Network 2,63,39,3923525,2985882,479,6233.57
+22081,George Armstrong Elementary School,ISP,124,86,7875672,6257922,1261,4962.63
+22091,Audubon Elementary School,Network 4,56,36,3119181,2321415,489,4747.25
+22101,Avalon Park School,Network 12,36,23,1954300,1396185,196,7123.39
+22131,Alice L Barnard Computer Math & Science Center,Network 10,37,19,2429384,1491522,226,6599.63
+22141,John Barry Elementary School,Network 4,77,56,4671743,3852012,449,8579.11
+22151,Clara W Barton School,Network 11,55,34,3118809,2381174,403,5908.62
+22161,Perkins Bass School,Network 11,53,34,3208978,2528569,293,8629.94
+22171,Newton Bateman Elementary School,Network 1,83,57,5102698,4072474,873,4664.92
+22181,Lillian R Nicholson Specialty School For Science & Mathem,Network 11,58,36,3884158,2936107,439,6688.2
+22191,George Rogers Clark Elementary School,ISP,35,19,1902652,1301512,136,9569.96
+22201,Jean Baptiste Beaubien School,Network 1,80,52,5403093,3927955,985,3987.76
+22211,Jacob Beidler School,Network 5,58,37,3226283,2439633,229,10653.42
+22221,Hiram H Belding School,,57,40,3652545,2932055,0,0.0
+22231,Alexander Graham Bell School,Network 4,101,61,6312736,4479052,888,5044.01
+22241,Frank I Bennett School,Network 13,34,21,2329473,1685780,289,5833.16
+22251,South Shore Fine Arts Academy,Network 12,64,36,3175197,2127348,211,10082.21
+22261,James G Blaine School,Network 4,73,46,4745859,3502923,628,5577.92
+22271,Daniel Boone School,Network 2,78,51,5130626,4148490,722,5745.8
+22281,Scott Joplin School,Network 11,43,30,2977065,2345229,263,8917.22
+22291,Myra Bradwell School of Excellence,Network 12,77,45,3711583,2531135,477,5306.38
+22301,Alex Haley School,Network 13,59,39,3897182,3087647,424,7282.19
+22311,Brentano Math & Science Academy,Network 4,44,27,2410656,1901339,785,2422.09
+22321,Norman Bridge School,Network 1,85,60,5415584,4212384,1072,3929.49
+22331,Orville T Bright Elementary School,Network 13,46,24,2434867,1482303,189,7842.86
+22341,Federico Garcia Lorca Elementary School,Network 4,79,53,4767411,3752931,618,6072.72
+22351,William H Brown Elementary School,Network 6,42,20,2222045,1318643,233,5659.41
+22361,Charles S Brownell School,Network 12,30,14,1681622,983899,141,6978.01
+22371,Bouchet Academy,Network 12,67,38,4209707,2778570,612,4540.16
+22381,West Ridge Elementary School,ISP,76,49,4118749,3140807,596,5269.81
+22391,Lyman A Budlong School,ISP,78,53,4626063,3645141,748,4873.19
+22401,Luther Burbank School,Network 3,87,53,5704457,4290826,682,6291.48
+22411,Edmund Burke Elementary School,Network 9,54,27,2986318,1628280,294,5538.37
+22421,Augustus H Burley Elementary School,Network 4,49,34,3190057,2497942,501,4985.94
+22431,Burnham/Anthony Inclusive Academy,Network 13,66,39,3490433,2444204,370,6605.97
+22441,Irene C. Hernandez Middle School for the Advancement of the Sciences,ISP,80,54,4941597,3896780,712,5473.0
+22451,Hughes/Davis,Network 13,70,46,4355807,3403019,434,7841.06
+22461,Castellanos,,51,34,3144321,2436069,0,0.0
+22471,Jonathan Burr Elementary School,Network 6,42,26,2450659,1768038,461,3835.24
+22481,John C Burroughs School,Network 8,45,28,2869208,2100186,288,7292.26
+22491,Milton Brunson Specialty Elementary School,Network 3,62,39,3276231,2313870,427,5418.89
+22501,Michael M Byrne School,Network 10,62,37,3743299,2771603,551,5030.18
+22511,Caldwell Academy Of Mathematics Science & Technology,ISP,32,19,1735728,1217994,200,6089.96
+22521,Little Village Academy,ISP,83,55,5051700,3956196,547,7232.48
+22531,Daniel R Cameron Elementary School,Network 5,82,52,5031700,3822604,640,5972.84
+22541,Arthur E Canty,Network 1,67,51,4403101,3778197,790,4782.52
+22551,Andrew Carnegie School,Network 9,53,35,3423778,2566202,364,7050.02
+22571,Charles Carroll School,Network 10,59,34,3317776,2398656,397,6041.97
+22581,Dr Jorge Prieto Math and Science Academy,Network 3,93,69,5849943,4756410,693,6863.48
+22591,Skinner North,Network 4,41,26,2405525,1751796,513,3414.78
+22601,Rachel Carson Elementary School,ISP,108,66,5512510,4044412,715,5656.48
+22611,William W Carter School,Network 9,45,28,1870668,1186157,245,4841.46
+22621,George Washington Carver Elementary,Network 13,56,32,3237966,2369239,440,5384.65
+22641,Ira F Aldridge Elementary School,Network 13,28,16,1281244,733903,203,3615.29
+22651,George F Cassell School,ISP,49,29,3174243,2319944,338,6863.72
+22661,Horace Greeley School,Network 4,74,52,4495521,3537094,327,10816.8
+22671,Thomas Chalmers Specialty School,Network 5,41,25,1961502,1307679,187,6992.94
+22681,Eliza Chappell Elementary School,Network 2,66,39,3645634,2583601,586,4408.88
+22691,Marvin Camras Elementary School,ISP,87,61,5148626,4168857,692,6024.35
+22701,Salmon P Chase School,Network 4,57,31,3290311,2316545,426,5437.89
+22711,STEM Magnet Academy,ISP,39,29,2251879,1794108,406,4418.95
+22721,Frederic Chopin School,Network 5,66,40,4152938,3096306,309,10020.42
+22731,Henry Clay Elementary School,Network 13,59,40,3920498,3109758,559,5563.07
+22741,Grover Cleveland School,Network 1,71,46,4225115,3213137,489,6570.84
+22751,Dewitt Clinton School,ISP,93,70,5673132,4742674,1029,4608.97
+22761,Henry R Clissold School,Network 10,61,28,3722669,2156939,446,4836.18
+22771,Edward Coles Model For Excellence School,Network 12,47,32,2855416,2261824,257,8800.87
+22791,Christopher Columbus School,ISP,28,19,1967517,1472434,253,5819.9
+22801,John W Cook Elementary School,Network 11,40,24,2669707,2087371,274,7618.12
+22811,Jordan Community School,Network 2,62,40,3518603,2799017,470,5955.37
+22821,John C Coonley School,Network 2,85,54,4965708,3710586,730,5083.02
+22831,Peter Cooper Dual Language Academy,Network 7,71,45,4343429,3401477,420,8098.76
+22841,Anna R. Langford Community Academy,Network 11,44,28,2840332,2047117,158,12956.43
+22851,Daniel J Corkery School,Network 7,62,42,3745642,2891298,430,6723.98
+22861,Manuel Perez Jr Elementary School,Network 7,39,28,2667531,2144910,293,7320.56
+22871,Everett Mckinley Dirksen School,Network 1,68,53,4485351,3785659,1244,3043.13
+22881,Charles R Darwin School,Network 4,58,37,3150202,2307710,501,4606.2
+22891,Nathan S Davis School & Annex,Network 8,75,50,4867612,3959848,524,7556.97
+22901,Charles Gates Dawes School,Network 10,87,59,5736904,4720761,888,5316.21
+22921,Mariano Azuela Elementary School,Network 10,75,50,4420250,3428765,662,5179.43
+22931,Charles S Deneen School,Network 12,63,32,2633231,1460231,413,3535.65
+22941,William E Dever School,Network 1,72,53,4428258,3538710,705,5019.42
+22951,Dewey Academy Of Multicultural Studies,Network 8,47,23,2223113,1315821,247,5327.21
+22971,Arthur Dixon School,Network 12,52,32,3263293,2497932,390,6404.94
+22981,Dodge Renaissance Academy,,26,14,1233575,761188,0,0.0
+22991,James R Doolittle Jr Intermediate & Upper Cycle East,Network 9,38,21,2114448,1437550,243,5915.83
+23001,John C Dore School,Network 10,56,38,3585937,2873628,711,4041.64
+23011,John B Drake School,Network 9,54,33,3552373,2609334,283,9220.26
+23021,Thomas Drummond Elementary School,Network 6,45,25,2512211,1725110,324,5324.41
+23031,Charles W Earle School,Network 11,51,32,3222899,2498641,272,9186.2
+23041,John F Eberhart School,Network 10,125,84,7810954,6220575,949,6554.94
+23051,Christian Ebinger,Network 1,57,41,3595974,2966625,694,4274.69
+23061,George W Curtis Elementary School,Network 13,70,38,3562081,2352839,331,7108.26
+23071,Edgebrook School,Network 1,36,27,2303729,1826108,526,3471.68
+23081,Richard Edwards School,Network 8,144,88,8783591,6570260,1124,5845.4
+23101,Edward (Duke) K Ellington School,Network 3,80,48,4758362,3596296,482,7461.21
+23131,Esmond School,Network 10,41,22,2488438,1540711,235,6556.23
+23141,Edward Everett Elementary School,ISP,35,19,1880540,1308608,84,15578.7
+23151,Laughlin Falconer School,Network 3,113,77,7166834,5769252,821,7027.16
+23161,James B Farnsworth School,Network 1,70,41,4265873,3168784,479,6615.44
+23201,Fernwood School,Network 13,32,21,1519568,1092191,243,4494.6
+23211,Eugene Field School,Network 2,37,27,1940034,1517290,128,11853.82
+23221,John Fiske School,Network 9,60,37,3725685,2810247,361,7784.63
+23231,Telpochcalli,Network 7,42,27,2750472,2104471,211,9973.78
+23241,Fort Dearborn Elementary School,Network 11,44,27,2795562,2111382,323,6536.79
+23251,Joseph Kellman Corporate Community School,Network 5,44,31,3143080,2458995,183,13437.15
+23261,Foster Park School,Network 11,48,25,2720121,1784135,337,5294.16
+23271,Melville W Fuller,Network 9,39,22,1743677,1171569,274,4275.79
+23281,Robert Fulton School,Network 8,52,34,2889654,2141446,331,6469.61
+23291,Frederick Funston School,Network 4,56,39,3514952,2803619,424,6612.31
+23301,John W Garvy School,Network 1,63,46,4271728,3484987,706,4936.24
+23311,Joseph E Gary School,Network 7,109,73,5784247,4523591,700,6462.28
+23321,Frank L Gillespie School,Network 12,60,37,3464930,2709030,310,8738.82
+23341,J W Von Goethe School,Network 4,79,52,4661009,3614057,710,5090.2
+23351,Jesse Owens Elementary Community Academy,Network 13,62,33,3715627,2621914,323,8117.41
+23361,Virgil Grissom School,Network 13,33,22,2164953,1705537,266,6411.81
+23371,William C Goudy School,Network 2,77,49,4592951,3572357,497,7187.84
+23391,Alexander Graham School,Network 6,50,28,2692407,1910066,361,5291.03
+23401,William P Gray School,Network 1,105,72,6726206,5543387,970,5714.86
+23411,Josefa Ortiz De Dominguez Elementary School New Gary,Network 7,67,41,3969219,2937658,386,7610.53
+23421,Ariel Community Academy,Network 9,54,37,2985305,2313615,315,7344.83
+23431,Nathanael Greene School,Network 8,65,41,3984644,3032268,319,9505.56
+23441,John Gregory School,Network 5,50,33,2774721,2031574,237,8572.01
+23451,Walter Q Gresham Elementary SchoolÂ of Excellence,Network 11,43,22,2002523,1233957,292,4225.84
+23461,Robert L Grimes School,Network 10,53,34,3132310,2373922,357,6649.65
+23481,John C Haines School,Network 6,58,41,3929248,3160960,458,6901.62
+23491,Nathan Hale School,Network 10,78,52,5287519,4293051,756,5678.69
+23501,Alexander Hamilton School,Network 4,46,28,2607690,1723074,502,3432.41
+23511,John H Hamline Elementary School,Network 8,70,42,4019943,2823732,522,5409.47
+23531,Charles G Hammond School,Network 7,63,41,3340299,2445932,236,10364.13
+23541,William F Finkl,Network 7,59,35,3313639,2464967,211,11682.32
+23551,Sharon Christa Mcauliffe Elementary School,Network 4,64,42,3712502,2847283,496,5740.47
+23561,Bret Harte Elementary School,Network 9,37,23,2407978,1747155,314,5564.17
+23581,John Harvard Elementary School of Excellence,Network 11,50,27,2656655,1720321,359,4791.99
+23591,Helge A Haugan,ISP,110,73,6662001,5269859,1030,5116.37
+23611,Emiliano Zapata Academy,Network 7,87,59,5415686,4391270,436,10071.77
+23621,Stephen K Hayt School,Network 2,86,58,5271115,4130090,789,5234.63
+23631,Woodlawn Community,Network 9,22,13,1436418,1009297,150,6728.63
+23641,Wendell Smith,Network 13,40,22,2225463,1476255,327,4514.55
+23651,Robert Healy School,Network 6,113,80,7497631,6040445,1177,5132.07
+23671,Phoebe Apperson Hearst School,Network 10,48,24,2525801,1592171,271,5875.18
+23681,James Hedges School Main,Network 8,86,53,5012320,3819775,468,8161.9
+23711,Helen M Hefferan School,Network 5,39,22,2559131,1715593,205,8368.76
+23721,Charles R Henderson School,Network 8,36,26,2280366,1790205,225,7956.47
+23731,Patrick Henry School,Network 1,63,43,3715038,3010339,407,7396.39
+23751,South Loop School,ISP,77,48,4397921,3008925,797,3775.3
+23771,Theodore Herzl School,Network 7,82,40,3386958,2004160,402,4985.43
+23791,Agustin Lara Academy,ISP,48,28,2878751,2038618,298,6841.01
+23801,William G Hibbard School,Network 1,105,71,6625556,5313400,840,6325.52
+23811,Rufus M Hitch School,Network 1,56,38,3510741,2698958,490,5508.08
+23821,Charles N Holden School,ISP,57,35,3465687,2569352,395,6504.71
+23831,Oliver Wendell Holmes School,Network 8,28,16,1901384,1296262,143,9064.75
+23851,Julia Ward Howe School,Network 3,56,36,2611824,1844749,342,5394.03
+23871,Thomas Hoyne School,Network 12,27,18,1795637,1471686,219,6720.03
+23881,Paul Cuffe Elementary School,Network 11,40,25,2614755,1953786,216,9045.29
+23891,Countee Cullen School,Network 13,27,18,1761509,1324126,156,8488.01
+23901,Charles Evans Hughes School,Network 7,34,20,1693548,1094007,173,6323.76
+23911,Edward N Hurley School,Network 10,72,48,3928476,3018713,732,4123.93
+23921,Friedrich L Jahn School,Network 4,51,35,3126118,2451721,330,7429.47
+23931,Minnie Mars Jamieson School,Network 2,77,53,5024197,4023459,788,5105.92
+23951,Edward Jenner Academy Of The Arts,,31,18,2078947,1505236,0,0.0
+23961,Joseph Jungman School,ISP,36,22,2106260,1574776,295,5338.21
+23971,Kate S Kellogg School,Network 10,33,17,2226005,1387430,298,4655.83
+23991,Joshua D Kershaw Elementary School,Network 11,37,22,2371047,1637492,204,8026.94
+24011,Pablo Casals,Network 5,50,31,2221201,1413703,301,4696.69
+24021,Joyce Kilmer School,Network 2,85,54,5080774,3821517,784,4874.44
+24051,Lazaro Cardenas School,ISP,63,43,3991623,3065593,725,4228.41
+24071,John H Kinzie Elementary School,ISP,75,44,4971694,3588348,628,5713.93
+24081,Rudyard Kipling School,ISP,38,25,2267150,1768597,216,8187.94
+24101,Rodolfo Lozano Bilingual & International Center,Network 6,42,22,2430519,1575100,260,6058.09
+24131,Wendell E Green,Network 11,37,21,2481753,1799815,277,6497.54
+24151,Leslie Lewis School,Network 3,53,29,2063972,1389092,356,3901.9
+24171,Arthur A Libby School,Network 8,55,34,3441185,2550587,269,9481.77
+24191,Abraham Lincoln Elementary School,Network 4,69,43,4586738,3158595,840,3760.24
+24201,Carl Von Linne Elementary School,Network 4,63,45,4243033,3585747,695,5159.37
+24221,Henry D Lloyd School,Network 3,111,76,7122476,5838339,795,7343.81
+24231,Josephine C Locke School,Network 3,126,80,8027849,6302281,1028,6130.61
+24241,Joseph Lovett School,Network 3,40,27,2403687,1833367,326,5623.82
+24251,James Russell Lowell Elementary School,Network 5,75,45,3981238,3008804,287,10483.65
+24281,Mary Lyon School,Network 3,119,84,7440286,5993473,946,6335.65
+24301,James Madison School,Network 12,26,13,1440620,1000107,200,5000.52
+24311,George Manierre School,Network 4,57,31,3460759,2350318,267,8802.73
+24331,Horace Mann School,Network 12,43,19,2347681,1194690,245,4876.29
+24341,Marquette Elementary,Network 10,133,67,5975162,3667096,947,3872.35
+24361,John L Marsh School,Network 13,81,43,4674005,3006995,544,5527.54
+24371,Michael Faraday Elementary School,Network 5,38,23,2205608,1665102,172,9680.82
+24381,Roswell B Mason Elementary School,Network 7,47,27,2879752,2146985,215,9985.98
+24401,Oscar F Mayer Elementary School,Network 4,72,41,4106713,2857567,705,4053.28
+24421,George B McClellan Elementary School,Network 6,48,26,2627718,1778230,285,6239.41
+24431,Cyrus H Mccormick School,Network 7,75,46,4368878,3250630,438,7421.56
+24441,Emmit Louis Till Math and Science Academy,Network 9,43,28,2501455,1866196,345,5409.27
+24451,Francis M Mckay School,Network 10,87,51,5861752,4390397,595,7378.8
+24461,Hanson Park School,Network 3,167,104,10408579,7997522,1049,7624.01
+24471,James B Mcpherson Elementary School,Network 2,105,60,6063353,4229396,760,5564.97
+24511,Ellen Mitchell School,ISP,41,22,2431211,1579720,445,3549.94
+24531,James Monroe School,Network 4,83,59,5479821,4591888,606,7577.37
+24551,Bernhard Moos School,Network 5,59,34,3071235,2182865,436,5006.58
+24571,Donald L Morrill Mathematics & Science Specialty School,Network 10,73,47,4258202,3201711,524,6110.16
+24591,Mount Greenwood Elementary School,ISP,72,52,4715528,3835079,1172,3272.28
+24601,Mount Vernon Elementary School,Network 13,34,21,1876364,1287341,215,5987.64
+24611,Wolfgang A Mozart School,Network 4,78,54,5106468,4051987,471,8602.91
+24621,John B Murphy School,Network 1,59,40,3801368,3032805,526,5765.83
+24631,Ronald H Brown Community Academy,Network 13,34,21,2264479,1652104,267,6187.66
+24641,Henry H Nash School,Network 3,43,27,2660588,1933244,288,6712.63
+24651,Jane A Neil School,Network 12,72,29,3522207,1926745,229,8413.76
+24661,Louis Nettelhorst School,Network 4,68,46,4154558,3319323,645,5146.21
+24671,Florence Nightingale School,Network 8,109,73,6638993,5299330,876,6049.44
+24681,William P Nixon School,Network 4,85,57,5526970,4280543,665,6436.91
+24691,Alfred Nobel Elementary School,ISP,76,49,4299685,3296512,551,5982.79
+24711,Norwood Park Elementary School,Network 1,38,22,2335609,1576684,287,5493.68
+24721,West Park Academy,Network 5,58,39,3740797,2963173,404,7334.56
+24731,William B Ogden School,Network 15,159,97,9418765,6469806,836,7739.03
+24741,Richard J Oglesby School,Network 11,50,30,2935984,2132373,265,8046.7
+24751,Isabell C O'Keeffe School,Network 12,67,35,2950238,1706974,548,3114.88
+24761,William J Onahan School,Network 1,56,37,3521278,2731700,645,4235.16
+24771,Oriole Park School,Network 1,61,45,3827355,3138201,603,5204.27
+24781,Brian Piccolo Elementary School,Network 5,61,33,2809006,1773985,578,3069.1
+24791,James Otis School,Network 6,80,51,4765160,3639228,348,10457.55
+24801,Luke O'Toole School,Network 11,44,27,2646550,1975775,287,6884.24
+24811,Wells Preparatory School,Network 9,49,32,3215327,2440884,311,7848.48
+24821,John M Palmer School,ISP,77,52,5052759,3965704,738,5373.57
+24841,Park Manor Elementary School,Network 12,34,22,2230298,1639573,261,6281.87
+24851,Louis Pasteur School,Network 8,101,67,6403080,5117204,577,8868.59
+24871,Ferdinand W Peck School,ISP,161,102,9198196,7295983,731,9980.8
+24881,Washington Irving School,Network 6,58,37,3514389,2666640,307,8686.13
+24891,Helen C Peirce School Of International Studies,ISP,86,62,5563038,4590065,1107,4146.4
+24911,William Penn School,Network 7,55,28,3100132,2181518,191,11421.56
+24921,Harold Washington School,Network 12,46,29,3058250,2317980,239,9698.66
+24931,Irma C Ruiz School,Network 7,78,51,4891988,3833489,424,9041.22
+24941,Mary G Peterson School,Network 1,82,58,4667377,3741696,864,4330.75
+24951,Marcus Moziah Garvey School,Network 13,29,17,1723065,1082710,243,4455.6
+24961,Josiah L Pickard School,Network 7,62,37,3771785,2710240,321,8443.12
+24971,John T Pirie Fine Arts & Academic Center,Network 12,39,24,2325219,1789954,197,9086.03
+24981,Ambrose Plamondon School,ISP,24,14,1627313,1083107,93,11646.31
+24991,Laura S Ward School,Network 5,63,40,3758830,2831288,266,10643.94
+25011,Portage Park Elementary School,Network 1,93,61,5965779,4706714,899,5235.52
+25021,William H Prescott School,Network 4,34,20,2027757,1374135,477,2880.79
+25031,Ernst Prussing,Network 1,60,42,3973274,3239599,641,5053.94
+25041,George M Pullman School,Network 13,31,20,1742797,1223043,276,4431.32
+25061,Ravenswood School,Network 2,48,31,2911315,2168349,478,4536.28
+25071,William H Ray School,Network 9,68,47,3976228,3102177,620,5003.53
+25091,William Claude Reavis School,Network 9,34,22,1937653,1512239,284,5324.81
+25101,Frank W Reilly School,Network 4,96,60,5847286,4446063,520,8550.13
+25111,Peter A Reinberg,Network 1,91,59,5356546,4142719,750,5523.63
+25121,Paul Revere Accelerated School,Network 12,31,20,1944756,1542956,199,7753.56
+25141,Philip Rogers School,Network 2,75,51,4629074,3653685,791,4619.08
+25151,Cesar E Chavez Multicultural Academic Center,ISP,87,55,5228997,3937273,792,4971.34
+25181,Martha M Ruggles Elementary School,Network 12,38,26,2359782,1803299,266,6779.31
+25191,William H Ryder Math/Science Specialty School,Network 11,56,29,2995417,2072220,344,6023.9
+25211,Sauganash Elementary School,Network 1,46,35,3019584,2486071,671,3705.04
+25231,Sidney Sawyer School,Network 8,140,93,8653158,6904597,865,7982.22
+25241,Jonathan Y Scammon School,Network 1,74,53,4411776,3598538,597,6027.7
+25291,Franz Peter Schubert School,Network 3,77,51,4773600,3783600,569,6649.56
+25301,William H Seward Communication Arts Academy,Network 8,72,44,4458103,3368953,362,9306.54
+25331,Arnold Mireles Academy,Network 12,70,40,4119631,3035849,485,6259.47
+25341,William T. Sherman Elementary School of Excellence,Network 8,34,17,1601427,938356,210,4468.34
+25351,Jesse Sherwood School,ISP,49,28,2903224,2000863,201,9954.56
+25361,James Shields Elementary School,Network 8,84,56,5514906,4267664,428,9971.15
+25371,Beulah Shoesmith School,Network 9,36,22,2020306,1383194,296,4672.96
+25381,John D Shoop Elementary School,Network 13,44,27,2787608,2087149,433,4820.19
+25391,Theophilus Schmid School,Network 12,26,16,1373439,1026052,175,5863.15
+25401,Washington D Smyser School,Network 1,80,56,5339476,4320412,744,5807.0
+25411,John M Smyth Elementary School,Network 6,63,37,3740863,2714093,327,8299.98
+25412,Bernice F Joyner Child-Parent- Center Br - Smyth,,1,0,37905,0,0,0.0
+25431,Hannah G Solomon School,Network 1,46,29,2884670,2300120,307,7492.27
+25441,Herbert Spencer Math & Science Academy,Network 3,89,56,4829711,3524003,388,9082.48
+25451,John Spry Community School,Network 16,67,45,4159457,3186813,295,10802.74
+25471,Adlai E Stevenson School,Network 10,108,71,7085030,5511499,1131,4873.09
+25491,Edward F Dunne School,Network 13,29,17,1918073,1374940,185,7432.12
+25502,Joseph Stockton Child-Parent-Center - Stockton,,1,0,14270,0,0,0.0
+25521,Harriet Beecher Stowe School,Network 5,78,52,4628864,3583929,574,6243.81
+25541,William K Sullivan Specialty School,Network 12,62,33,3868302,2631235,403,6529.09
+25561,Elizabeth H Sutherland School,Network 10,55,29,3576780,2264897,629,3600.8
+25571,George B Swift Specialty School,Network 2,70,47,4321978,3492984,512,6822.24
+25581,Mancel Talcott School,Network 6,59,37,3536191,2605953,522,4992.24
+25591,Douglas Taylor Elementary School,Network 13,52,34,3398337,2629247,311,8454.12
+25601,James N Thorp Elementary School,Network 12,55,25,3188732,1951828,303,6441.67
+25621,George W Tilton School,Network 5,45,26,2772643,1878953,216,8698.87
+25631,Enrico Tonti School,Network 8,88,58,5458035,4156179,766,5425.89
+25661,Mark Twain School,Network 10,90,62,5875237,4666429,821,5683.86
+25671,Lavizzo Elementray,Network 13,44,22,2347080,1546092,344,4494.43
+25681,Alessandro Volta School,Network 1,89,63,5899984,4826541,722,6684.93
+25711,James Wadsworth School,Network 9,59,38,3537983,2584752,461,5606.85
+25731,John A Walsh Elementary School,Network 7,61,39,3940142,3031554,299,10139.0
+25751,James Ward Elementary School,Network 6,55,37,3412476,2722743,491,5545.28
+25761,Joseph Warren Elementary School,Network 12,35,19,2228432,1470982,251,5860.49
+25771,George Washington School,Network 13,67,45,4291712,3305409,562,5881.47
+25781,Thomas J Waters School,Network 2,53,42,3730783,3225403,682,4729.36
+25791,Daniel Webster School,Network 5,42,21,2362996,1397260,196,7128.87
+25811,Daniel S Wentworth School,,66,43,3736766,2833249,0,0.0
+25831,John Whistler Elementary School,Network 13,33,20,1987743,1384729,229,6046.88
+25841,Eli Whitney School,Network 7,93,59,5626738,4459266,564,7906.51
+25861,John Greenleaf Whittier School,Network 7,37,25,2489196,1993172,228,8742.02
+25871,A N Pritzker School,Network 6,65,45,4202863,3262366,681,4790.6
+25881,Wildwood School,Network 1,45,28,2980731,2153052,526,4093.27
+25911,Richard Yates Elementary School,Network 5,86,50,4978464,3554212,280,12693.6
+25921,Ella Flagg Young School,Network 3,88,57,5679549,4446183,402,11060.19
+25931,Ludwig Von Beethoven School,Network 9,49,27,2797049,2053863,303,6778.43
+25941,Carrie Jacobs Bond,Network 11,49,26,2570115,1703814,248,6870.2
+25951,Richard J Daley Academy,Network 8,63,39,3870663,2868745,475,6039.48
+25991,Joseph Brennemann School,Network 2,72,42,3329713,2251150,473,4759.35
+26021,Willa Cather School,Network 5,44,28,2921028,2235505,293,7629.69
+26031,R Nathaniel Dett,Network 6,62,37,3480352,2494769,298,8371.71
+26051,Dvorak Technology AcademyÂ School of Excellence,Network 7,57,29,2590166,1546555,263,5880.53
+26061,Jackie R Robinson,Network 9,18,10,1018376,757110,100,7571.1
+26091,Morton School of Excellence,Network 5,45,23,2184884,1406410,258,5451.21
+26141,John Foster Dulles Elementary School of Excellence,Network 9,79,42,3731498,2340029,656,3567.1
+26191,Arthur R Ashe Jr Elementary School,Network 12,37,23,2435879,1813427,346,5241.11
+26201,John T Mccutcheon School,Network 2,78,43,4326782,3007087,314,9576.73
+26231,James Weldon Johnson Elementary School of Excellence,Network 5,41,25,2177576,1545999,171,9040.94
+26232,Johnson Child-Parent-Center Br - Johnson,,1,0,38379,0,0,0.0
+26251,Irvin C Mollison School,Network 9,52,33,3227788,2467239,216,11422.39
+26281,Henry O Tanner School,Network 12,42,24,2515004,1795219,239,7511.39
+26291,Adam Clayton Powell Jr Paideia Community Academy,Network 12,50,32,3398364,2572235,530,4853.28
+26301,Ronald E McNair Elementary SchoolÂ of Excellence,Network 3,58,27,2589722,1444130,296,4878.88
+26321,Benjamin E Mays Academy,Network 11,58,34,3350480,2328542,268,8688.6
+26331,Richard Henry Lee School,ISP,74,49,4820200,3856151,570,6765.15
+26351,Genevieve Melody School,Network 5,68,37,3941889,2699026,315,8568.36
+26371,William Augustus Hinton Elementary School,Network 11,30,17,1691027,1147967,198,5797.8
+26381,Oliver S Westcott Elementary School,Network 11,42,26,2562881,1885391,367,5137.29
+26391,George Leland Elementary School,Network 3,66,42,3991064,3248468,321,10119.8
+26421,Mary E Mcdowell Elementary School,ISP,27,15,1446700,869622,88,9882.06
+26431,Edward H White,Network 13,25,13,1353847,732402,117,6259.83
+26441,Amelia Earhart Options For Knowledge Specialty School,Network 12,25,15,1419499,926638,186,4981.91
+26451,Brighton Park Elementary School,Network 8,53,37,3301790,2635089,285,9245.9
+26461,Evergreen Academy School,Network 8,37,24,2366356,1771976,197,8994.79
+26521,Amos A Stagg School,Network 11,57,35,2645783,1841732,359,5130.21
+26541,Carter G Woodson South,Network 9,45,27,2503242,1728193,281,6150.17
+26542,Woodson South Child-Parent-Center Br - Woodson South,,2,1,136962,94952,0,0.0
+26591,Medgar Evers School,Network 11,39,22,2407823,1716053,194,8845.67
+26601,William E B Dubois School,Network 13,30,13,1693020,843812,180,4687.85
+26621,Charles H Wacker School,ISP,31,19,1969846,1435522,213,6739.56
+26631,Oscar Depriest School,Network 3,82,49,5032997,3672465,439,8365.52
+26651,Mahalia Jackson School,Network 11,51,27,2752658,1770002,289,6124.55
+26701,Fairfield Academy,Network 10,55,37,3289992,2522866,470,5367.82
+26721,Sandoval Elementary School,Network 8,100,64,6577383,5196212,697,7455.11
+26731,Barbara Vick Early Childhood & Family Center,,53,25,3062664,1878741,0,0.0
+26751,Johnnie Colemon School,Network 13,31,18,2053956,1341884,157,8547.04
+26771,Belmont-Cragin School,Network 3,60,33,3214747,2056449,524,3924.55
+26781,Talman School,ISP,49,29,2673251,1912586,320,5976.79
+26791,Tarkington School of Excellence,Network 10,91,57,5104949,3924859,775,5064.37
+26821,Calmeca Academy of Fine Arts and Dual Language,Network 8,77,48,4414009,3363909,582,5779.95
+26831,Durkin Park School,Network 10,58,40,3878176,3115430,647,4815.23
+26841,North River Elementary School,Network 1,49,27,2702502,1735045,302,5745.21
+26861,Uplift Community High School,Network 14,46,28,2401267,1646699,234,7037.16
+26881,Suder Montessori Magnet School,Network 6,50,28,2817249,1911969,446,4286.91
+26891,Velma Thomas Early Childhood Center,,36,16,1614572,814298,0,0.0
+26901,Frazier Prepartatory Academy,,4,0,103779,0,0,0.0
+26921,Disney II Magnet School,Network 14,81,57,4572062,3464710,427,8114.09
+27091,James Shields Middle School,Network 8,62,42,3971955,3139969,337,9317.38
+28081,Edison Park Elementary,Network 1,46,29,2611834,1918020,399,4807.07
+28151,Orr Academy,Network 15,63,36,3776486,2540452,308,8248.2
+29011,Thomas A Edison Regional Gifted Center,Network 1,33,16,1993960,1185401,266,4456.4
+29021,Burnside Scholastic Academy,Network 12,64,29,4077956,2311579,274,8436.38
+29031,Stephen Decatur Classical School,Network 2,25,10,1680323,710014,337,2106.88
+29041,Turner-Drew Language Academy,Network 11,42,20,3027008,1714132,176,9739.39
+29051,Leif Ericson Scholastic Academy,Network 5,45,27,2831057,1969372,301,6542.75
+29071,Gerald Delgado Kanoon Magnet School,Network 7,72,44,4554047,3186247,344,9262.32
+29081,Franklin Fine Arts Center,Network 4,43,26,2650464,1849695,338,5472.47
+29091,Matthew Gallistel Language Academy,Network 13,119,70,7299506,4971905,588,8455.62
+29101,LaSalle Language Magnet,ISP,65,40,4260604,3164445,582,5437.23
+29111,A Philip Randolph Magnet School,Network 11,44,31,3022406,2423521,305,7945.97
+29121,Frank W Gunsaulus Scholastic Academy School,Network 8,74,49,4129353,3172671,664,4778.07
+29131,Hawthorne Scholastic Academy,Network 4,53,26,3555403,1951220,646,3020.48
+29141,Galileo Scholastic Academy Of Math & Science,Network 6,51,28,3439318,2299630,552,4165.99
+29151,Maria Saucedo Scholastic Academy,Network 7,113,57,6781112,4192411,908,4617.24
+29161,Lasalle Language Academy School,Network 4,55,35,3541616,2495091,464,5377.35
+29171,Andrew Jackson Language Academy,Network 6,52,22,3312734,1513334,456,3318.71
+29181,James E Mcdade Classical School,Network 12,23,10,1456711,741370,210,3530.34
+29191,Inter-American Magnet,Network 4,59,39,3727730,2837217,626,4532.3
+29201,Mark Sheridan Mathematics & Science Academy,Network 6,48,28,3226274,2300557,517,4449.84
+29211,Annie Keller Regional Gifted Magnet School,Network 10,23,13,1603723,950159,221,4299.35
+29221,Philip Murray Language Academy,Network 9,51,26,3554983,2067953,472,4381.24
+29231,Walter L Newberry Mathematics & Science Academy,Network 4,57,32,3473234,2134717,311,6864.01
+29241,William Bishop Owen Scholastic Academy School,Network 10,31,13,2135303,1054431,284,3712.79
+29251,John J. Pershing East Magnet School,Network 9,54,35,3331653,2435559,409,5954.92
+29261,Edgar Allan Poe Classical School,Network 13,20,7,1252995,467929,228,2052.32
+29271,Harriet E Sayre Language Academy,Network 3,45,34,2561285,2065480,380,5435.47
+29281,Mark Skinner School,Network 6,90,50,5431761,3352493,1143,2933.0
+29291,Stone Scholastic Academy,Network 2,60,26,3788781,1895547,554,3421.57
+29301,Ole A Thorp Scholastic Academy,ISP,67,30,4476816,2269262,830,2734.04
+29311,John H Vanderpoel Magnet School,Network 10,32,15,1959381,908689,245,3708.94
+29321,Beasley Academic Center Magnet,Network 9,114,53,6715157,3971439,1136,3495.96
+29322,Beasley CPC,,19,8,915144,535334,0,0.0
+29341,Jensen Scholastic Academy School,Network 5,47,28,2913629,2007921,218,9210.65
+29361,Ted Lenart Regional Gifted Center,Network 11,25,15,1601846,1144144,301,3801.15
+29371,Albert R Sabin Magnet School,Network 6,56,42,3700231,3128771,357,8764.07
+29381,Robert A Black Magnet School,Network 12,43,27,3014160,2249564,368,6112.94
+29391,Sir Miles Davis Magnet,ISP,38,21,2009511,1295098,130,9962.29
+29401,Walt Disney Magnet School,Network 2,136,67,8050359,4529034,1447,3129.96
+29411,Frazier International Magnet Elementary School,ISP,33,21,1890842,1475215,129,11435.79
+30011,Nancy B Jefferson Alternative School,,66,52,5977532,4984047,0,0.0
+30031,Walter S Christopher School,Network 8,98,36,5114477,2746232,303,9063.5
+30041,Moses Montefiore Special School,,23,10,1450317,857069,0,0.0
+30051,Daniel Carter Beard School,,65,23,3230006,1641301,0,0.0
+30071,Blair Early Childhood Center,,63,24,3049409,1602975,0,0.0
+30081,Frederick Stock School,,47,21,2757150,1624794,0,0.0
+30101,Ruben Salazar Bilingual Education Center School,ISP,40,27,2517268,1944733,355,5478.13
+30121,Wilma G Rudolph Learning Center,,51,16,2600285,1177456,0,0.0
+30141,Courtenay Language Arts Center,Network 2,101,52,5565702,3664431,275,13325.15
+31021,Crispus Attucks School,,20,11,959361,569047,0,0.0
+31041,Crown Community Academy Fine Arts Center,Network 5,37,22,2434004,1651830,106,15583.3
+31061,Ralph H Metcalfe Community Academy Elementary School,Network 13,45,27,2868537,1984295,319,6220.38
+31081,Stephen F Gale Community Academy,Network 2,55,27,3463641,2182257,338,6456.38
+31101,Ninos Heroes Academic Center,Network 12,46,26,2994256,2066659,273,7570.2
+31111,John Hay Community Academy School,Network 3,46,28,2743902,1941327,213,9114.24
+31121,Thomas A Hendricks Community Academy,Network 9,35,20,2192204,1604634,184,8720.86
+31141,Pilsen Community Academy,Network 7,65,39,3410231,2383503,215,11086.08
+31151,Charles Kozminski Community Academy School,Network 9,35,20,2071549,1422554,238,5977.13
+31161,Lawndale Community Academy School,Network 5,49,27,2499258,1753168,194,9036.92
+31181,Francis W Parker Community Academy,Network 11,83,45,4645898,3298500,344,9588.68
+31201,Parkside Community Academy School,Network 12,40,24,2135377,1468024,242,6066.22
+31211,Pulaski International School of Chicago,Network 6,84,51,4986714,3464312,912,3798.58
+31221,Charles Sumner Mathematics & Science Community Academy,Network 5,38,23,2558413,1934528,183,10571.18
+31251,Thomas J Higgins Community Academy,Network 13,43,25,2740037,1942557,269,7221.42
+31261,Jose De Diego Community Academy,Network 5,95,47,4972632,3153093,561,5620.53
+31281,Orozco Academy,Network 7,63,39,3821990,2871114,275,10440.43
+31301,Claremont Academy,Network 10,57,32,3665137,2607757,307,8494.36
+32011,Albany Park Multicultural Academy Elementary School,Network 1,28,17,1658232,1078218,241,4473.92
+32021,Lionel Hampton Fine and Performing Arts School,Network 10,57,38,3646275,2813335,417,6746.64
+32031,National Teachers' Academy (NTA),Network 6,61,39,3422182,2594505,696,3727.74
+32081,Ashburn Community Area School,Network 10,55,35,3766395,2895542,310,9340.46
+41041,Francisco I Madero Middle School,Network 7,35,17,2124500,1211986,223,5434.92
+41051,Michelle Clark Academic Prep Magnet High School,ISP,63,30,3697335,2219487,473,4692.35
+41061,Frederick A Douglass Academy High School,Network 15,34,21,2286757,1616345,30,53878.17
+41081,Thurgood Marshall Middle School,,22,13,1045447,639031,0,0.0
+41091,Logandale Middle School,Network 4,81,51,4913073,3752308,437,8586.55
+41111,Marine Leadership Academy at Ames,Network 14,90,52,5493654,3819483,571,6689.1
+41121,Northwest Middle,Network 3,56,37,3683258,2820522,537,5252.35
+45211,Chicago Academy Elementary School,Network 1,56,34,3155424,2357226,541,4357.16
+45221,Hyman G. Rickover Naval Academy,ISP,50,33,3310533,2194581,537,4086.76
+45231,Air Force Academy High School,Network 16,44,25,2429849,1435012,142,10105.69
+46021,Hancock High School,Network 15,82,59,5523476,4394503,1050,4185.21
+46031,Roald Amundsen High School,Network 14,114,56,7759868,4531567,1447,3131.75
+46041,William J Bogan Computer Technical High School,Network 16,117,57,7302185,4260455,632,6741.22
+46061,Northside College Prep,Network 14,97,66,6776945,5327227,1069,4983.36
+46081,Richard T Crane Tech Prep Comm On School,,20,10,963082,621532,0,0.0
+46101,Eric Solorio Academy High School,Network 15,119,81,6079609,4543243,1242,3657.98
+46111,Christian Fenger Academy,Network 17,50,27,2732766,1714188,214,8010.24
+46121,Paul Robeson High School,,44,23,2422082,1600665,0,0.0
+46131,Edwin G Foreman High School,Network 14,143,95,9144114,7095820,613,11575.5
+46141,Gage Park High School,Network 16,66,33,3868190,2260329,358,6313.75
+46151,Harper High School,,63,32,3537019,2285351,0,0.0
+46171,Hyde Park Career Academy,Network 17,97,50,6191037,3810598,861,4425.78
+46181,Thomas Kelly High School,Network 16,216,140,14942139,11168966,1637,6822.86
+46191,Kelvyn Park High School,Network 14,101,59,6610873,4576988,531,8619.56
+46201,John F Kennedy High School,Network 16,152,102,10111043,8114747,1595,5087.67
+46211,Lake View High School,Network 14,126,84,8127943,6085827,1474,4128.73
+46221,Albert G Lane Technical High School,Network 14,301,223,19236154,15860787,4650,3410.86
+46241,Stephen T Mather High School,Network 14,145,102,10068854,7949327,1713,4640.6
+46251,Morgan Park High School,Network 16,142,93,9922031,7407046,1202,6162.29
+46261,Wendell Phillips Academy,Network 17,77,42,4279630,2705337,444,6093.08
+46271,Theodore Roosevelt High School,Network 14,143,101,8863677,7168937,1085,6607.34
+46281,Carl Schurz High School,Network 14,232,163,14733119,11734419,1169,10038.05
+46291,Charles P Steinmetz Academic Centre,Network 14,158,96,10844546,7579775,1149,6596.87
+46301,Roger C Sullivan High School,Network 14,76,39,4551629,2756052,790,3488.67
+46311,William Howard Taft High School,Network 14,251,176,16296630,12231071,4320,2831.34
+46321,Lincoln Park High School,Network 14,181,120,11269132,8203530,2210,3712.01
+46331,George Washington High School,Network 17,149,94,8998104,6504939,1517,4288.07
+46341,Gurdon S Hubbard High School,Network 16,148,84,9462440,6092515,1581,3853.57
+46361,Kenwood Academy,Network 17,148,96,9565968,6930679,2223,3117.67
+46371,KIng Selective Enrollment HS,Network 17,84,50,5253091,3876309,810,4785.59
+46381,Carver Military High School,Network 17,56,27,3786273,2163842,450,4808.53
+46391,George Henry Corliss High School,Network 17,69,37,4054543,2610430,390,6693.42
+46401,Percy L Julian High School,Network 16,108,64,7021502,5133698,424,12107.8
+46421,Benito Juarez High School,Network 15,159,113,9873214,7932733,1656,4790.35
+46431,North Grand High School,Network 15,100,63,6032727,4460866,1021,4369.15
+46461,Spry Community Links High School,Network 16,23,17,1536045,1147026,85,13494.43
+46471,Al Raby High School,Network 15,79,43,4193225,2739749,122,22456.95
+46481,Chicago Academy High School,Network 14,50,36,3249583,2711434,589,4603.45
+46491,Bowen High School,Network 17,71,35,4056226,2504619,255,9822.04
+46511,Lindblom Math and Science Academy High School,Network 16,115,77,6672756,4922413,1307,3766.19
+46521,Devry University Advantage Academy,,13,9,966006,628418,0,0.0
+46551,Back of the Yards,ISP,59,31,3271158,1866363,1068,1747.55
+46611,Sarah Goode High School,Network 16,76,47,3428180,2506917,985,2545.07
+46621,VOISE Academy High School,Network 15,27,21,1755480,1391353,153,9093.82
+46631,South Shore International College Prep High School,Network 17,73,43,4195313,2727528,622,4385.1
+46641,Richard T. Crane (RTC) Medical Preparatory High School,Network 15,35,25,1984587,1458724,308,4736.11
+47021,William Jones College Prep High School,Network 15,131,80,7672762,5387087,1970,2734.64
+47031,Emil G Hirsch Metropolitan High School,Network 17,38,17,2317348,1443811,118,12235.69
+47041,John Marshall Metropolitan High School,Network 15,75,43,4176644,2934671,198,14821.56
+47051,Gwendolyn Brooks,ISP,74,48,4710932,3408820,999,3412.21
+47061,Senn Metropolitan Academy Of Liberal Arts & Technology,Network 14,134,80,8036800,5249872,1597,3287.3
+47081,Frederick W Von Steuben Metropolitan Science Center,Network 14,152,99,9833266,7369803,1703,4327.47
+47091,Chicago High School For Agricultural Sciences,ISP,82,36,4871675,2451374,776,3159.01
+47101,Whitney M Young Magnet High School,Network 15,174,111,12062945,8698940,2230,3900.88
+49021,Northside Learning Center,Network 14,98,37,4796353,2576643,275,9369.6
+49031,Southside Occupational Academy,,76,31,3854633,2172084,0,0.0
+49041,Consuella B. York Alternative HS,,57,46,4930498,4175656,0,0.0
+49051,Simpson Academy for Young Women,,21,14,1399672,987203,0,0.0
+49081,Jacqueline B Vaughn Occupational High School,Network 14,75,28,3560561,1915053,224,8549.32
+49091,Hope College Prep HS,,48,23,2878815,1632879,0,0.0
+49101,Ray Graham Training Center,,57,22,3063642,1722375,0,0.0
+49121,Little Village Multiplex,,8,2,366717,141631,0,0.0
+49131,Collins Academy High School,Network 15,54,33,2711314,1928136,241,8000.55
+49141,Austin Polytechnical Academy,,30,20,1870780,1436903,0,0.0
+49151,Marine Military Academy,,3,1,250918,69366,0,0.0
+49161,TEAM Englewood Community Academy,,45,23,2664539,1585746,0,0.0
+51021,Harlan Community Academy High School,Network 17,97,58,5616098,3948336,205,19260.15
+51071,William H Wells Community Academy High School,Network 15,72,42,4400931,2876004,419,6863.97
+51091,Roberto Clemente Community Academy High School,Network 15,91,48,4669320,2562424,766,3345.31
+52011,World Language High School (at Little Village),Network 15,35,27,2153131,1685859,406,4152.38
+53011,Chicago Vocational Career Academy,Network 17,138,79,8812746,6034381,636,9488.03
+53021,Dunbar Vocational Career Academy,Network 17,111,69,7462640,5526368,366,15099.36
+53041,Charles Allen Prosser Career Academy,Network 15,145,81,9280577,5892926,1224,4814.4
+53051,Ellen H Richards Career Academy,Network 16,51,30,2778963,1966128,336,5851.56
+53061,Neal F Simeon Vocational High School,Network 17,133,71,8174177,5294958,1143,4632.45
+53071,George Westinghouse High School,Network 15,106,70,6284926,4493865,1259,3569.41
+53091,David G Farragut Career Academy High School,Network 16,127,62,7588660,4500147,479,9394.86
+53101,Marie Sklodowska Curie Metropolitan High School,Network 15,288,141,18665634,10751902,2985,3601.97
+53111,Manley Career Community Academy High School,Network 15,49,31,2847334,2017994,137,14729.88
+53121,Edward Tilden Career Commmunity Academy,Network 16,63,30,3362427,1948352,242,8051.06
+55011,Phoenix Military Academy,ISP,55,31,3475730,2266102,381,5947.79
+55151,"Infinity Math, Science, and Technology High School (at Little Village)",Network 15,41,28,2305986,1661882,411,4043.52
+55161,Daniel Hale Williams Prep School of Medicine,Network 17,39,22,1886908,1429326,84,17015.79
+55171,School of Social Justice (at Little Village),Network 15,38,26,2383228,1781749,286,6229.88
+55181,Multicultural Arts High School (at Little Village),Network 15,33,23,1853056,1418934,262,5415.76
+55191,Bronzeville Scholastic Institute,Network 17,49,35,2894100,2187350,121,18077.28
+63011,Academy for Global Citizenship,,6,0,128511,0,0,0.0
+63031,Hope Institute Learning Academy,,4,0,90419,0,0,0.0
+63041,Kwame Nkrumah Academy,,2,0,33366,0,0,0.0
+63051,Chicago High School for the Arts,Contract,7,0,161068,0,574,0.0
+63061,Community Services West Academy,,1,0,17149,0,0,0.0
+63071,Urban Prep Charter Acad for Young Men - East Garfield Park,,2,0,39624,0,0,0.0
+63081,EPIC Academy,Charter,2,0,39558,0,262,0.0
+63091,Chicago Tech Academy High School,Contract,3,0,57307,0,342,0.0
+63141,Chicago Excel/Camelot,,3,0,33907,0,0,0.0
+63142,Excel Academy of Englewood,,1,0,13125,0,0,0.0
+63181,Horizon Science Academy-Southwest Chicago Charter,Charter,2,0,39558,0,735,0.0
+65017,Prologue - Winnie Mandela High School,,1,0,0,0,0,0.0
+66021,Dyett High School,,10,5,679485,408827,0,0.0
+66031,KIPP - Create College Prep,,2,0,36765,0,0,0.0
+66101,Youth Connection Charter School (YCCS),,15,0,209435,0,0,0.0
+66112,University of Chicago Charter - Woodlawn,Charter,6,0,114333,0,684,0.0
+66113,University of Chicago Charter School - Woodson South Campus,,4,0,98252,0,0,0.0
+66151,Alain Locke Charter School,,3,0,53053,0,0,0.0
+66171,Young Women's Leadership Charter School,,2,0,45210,0,0,0.0
+66254,ASPIRA Charter - Early College Campus,Charter,2,0,41021,0,266,0.0
+66261,KIPP Ascend Charter School,,4,0,58166,0,0,0.0
+66281,Chicago Math and Science Academy (CMSA) Charter School,Charter,2,0,33132,0,608,0.0
+66291,"Architecture, Construction, and Engineering (ACE) Technical Charter School",,6,0,168709,0,0,0.0
+66321,University of Chicago Charter School - Donoghue Campus,,4,0,52229,0,0,0.0
+66331,Erie Elementary Charter School,,2,0,30274,0,0,0.0
+66351,ASPIRA Charter-Haugan Middle School Campus,,5,0,85086,0,0,0.0
+66411,Austin Business and Entrepreneurship Academy,,22,14,1321968,902691,0,0.0
+66421,Bronzeville Lighthouse Charter School,,6,0,132179,0,0,0.0
+66431,Catalyst Charter School - Howland,,3,0,63357,0,0,0.0
+66442,Urban Prep Academy for Young Men - South Shore,Charter,2,0,19551,0,154,0.0
+66511,Austin Multiplex,,10,0,283736,0,0,0.0
+66571,Rowe Elementary School,,4,0,97796,0,0,0.0
+66581,Prologue - Joshua Johnston Charter School for Fine Art and Design,,1,0,0,0,0,0.0
+66641,Legal Prep Charter Academy,Charter,1,0,18578,0,214,0.0
+66671,Chicago Collegiate Charter School,Charter,1,0,17149,0,190,0.0
+66691,Intrinsic Charter School,Charter,4,0,72325,0,959,0.0
+66941,Foundations College Preparatory Charter School,,2,0,36765,0,0,0.0
+66951,Great Lakes Academy Charter School,,1,0,17149,0,0,0.0
+67021,Peace and Education Coalition High School,,37,22,2083916,1341074,0,0.0
+70020,Walter Payton College Preperatory HS,Network 15,91,61,6149893,4612677,1257,3669.62
+70070,Chicago Military Academy - Bronzeville,Network 17,47,25,3019574,1724653,231,7466.04
