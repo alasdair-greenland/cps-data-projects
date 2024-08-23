@@ -4,6 +4,8 @@ import re # regex
 import requests as reqs
 import random
 
+pd.options.mode.chained_assignment = None  # default='warn'
+
 import numpy
 import scipy
 
@@ -11,75 +13,17 @@ import matplotlib.pyplot as plt
 
 from helpers import *
 from constants import *
-
-ISP = 0
-NETWORK_SCHOOL = 1
-NETWORK_OFFICE = 2
-CENTRAL_OFFICE = 3
-CHARTER = 4 # also includes contract schools
-
-TEACHER_POSITIONS = [
-    'Bilingual Teacher' ,
-    'PartTime Teacher' ,
-    'Regular Teacher' ,
-    'School Counselor',
-    'Special Education Teacher'
-]
-
-def format_name(n):
-    n = n.strip()
-    n = n.replace(' Miss ', ' ')
-    n = n.replace(' Ms. ', ' ')
-    n = n.replace(' Mr. ', ' ')
-    n = n.replace(' Mrs. ', ' ')
-    n = n.replace('.', '')
-    n = n.replace('"', '')
-    return n
-
-dn = 0
-
-# Finds the job (if there is one) in df that matches the one represented by row
-# df is one of processed_data/position_data/YEAR.csv and row is a row from an 
-# employeepositionroster.
-# Since we don't have employee ids, "same job" is defined as the same name working in the
-# same position at the same school.
-# this is only run when populating processed_data/position_data, because we then assign
-# "job ids" which make it possible to search for the same job across different years
-def find_same_job(df, row):
-    global dn
-    if pd.isnull(row["Name"]): return None
-    test_name = format_name(str(row["Name"]))
-    def matches_row(newrow):
-        """
-        print(f"{str(newrow["Name"])}|")
-        print(f"{format_name(str(row["Name"]))}|")
-        print(f"{str(newrow["Job Title"])}|")
-        print(f"{str(row["Job Title"])}|")
-        print(f"{str(newrow["Dept ID"])}|")
-        print(f"{str(row["Dept ID"])}|")
-        print("\n")
-        """
-        return (
-            str(newrow["Name"]) == test_name and 
-            str(newrow["JobCode"]) == str(row["JobCode"]) and 
-            str(newrow["Dept ID"]) == str(row["Dept ID"])
-        )
-    rows = df[df.apply(matches_row, axis=1)]
-    if len(rows) > 0:
-        return rows.iloc[0]
-    else:
-        return None
+from utils import *
 
 # creates position_data/YEAR.csv
 # this should only ever be run on its own for the most recent year,
 # because it needs to look at the equivalent file for the previous year
 # if it is necessary to update previous years' data (i.e. to change formatting 
 # or add fields), run make_all_position_data (which calls this)
-# this function is very slow due to making over a billion
-# lookups and checks - should take between one and two hours
+# this should take about 5 minutes to run for one year's worth of data
 def make_position_data(year):
     cols = [ 'Job ID', 'Pos #', 'JobCode', 'Job Title', 'Dept ID', 'Department', 'Salary', 'Raise', 'ExistedLastYear', 'Name' ]
-    f = open(f'processed_data/position_data/{year}.csv', 'w')
+    f = open(f'processed_data/position_data/{year}-test.csv', 'w')
     f.write(",".join(cols))
     f.write('\n')
     df = pd.read_csv(f'data/employeepositionroster_{year}-06-30.csv', encoding='latin-1')
@@ -152,17 +96,13 @@ def make_all_position_data():
     for year in range(2014, CURRENT_YEAR + 1):
         make_position_data(year)
 
-# returns true iff the job title refers to a teaching job
-def is_teaching_job(title):
-    return title in [ 'Bilingual Teacher','PartTime Teacher','Regular Teacher','School Counselor','Special Education Teacher' ]
-
 # populates processed_data/department_data/YEAR.csv with info about
 # departments w.r.t. jobs/budget
 def make_department_data(year):
     df = pd.read_csv(f"processed_data/position_data/{year}.csv", encoding="latin-1")
     df2 = pd.read_csv("data/network_data.csv", encoding="latin-1")
     out = {}
-    cols = ["Dept ID", "Department", "Network", "Total Staff", "Teaching Staff", "Total Staff Budget", "Teaching Staff Budget", "Students", "Teacher Spending Per Student" ]
+    cols = ["Dept ID", "Department", "Network", "GeoNetwork", "Total Staff", "Teaching Staff", "Total Staff Budget", "Teaching Staff Budget", "Students", "Teacher Spending Per Student", "Attendance Rate" ]
     for index, row in df.iterrows():
         did = row["Dept ID"]
         if did == 0: continue
@@ -171,6 +111,8 @@ def make_department_data(year):
                 did,
                 row["Department"],
                 "",
+                "",
+                0,
                 0,
                 0,
                 0,
@@ -181,15 +123,17 @@ def make_department_data(year):
             newrows = df2.loc[df2["Dept ID"] == row["Dept ID"]]
             if not newrows.empty > 0:
                 out[did][2] = newrows.iloc[0]["Network"]
-                out[did][-2] = newrows.iloc[0]["Students"]
-        out[did][3] += 1
-        out[did][5] += row["Salary"]
+                out[did][3] = newrows.iloc[0]["Geographic Network"]
+                out[did][-3] = newrows.iloc[0]["Students"]
+                out[did][-1] = newrows.iloc[0]["Attendance Rate"]
+        out[did][4] += 1
+        out[did][6] += row["Salary"]
         if is_teaching_job(row["Job Title"]):
             out[did][4] += 1
             out[did][6] += row["Salary"]
-            if out[did][-2] > 0:
-                out[did][-1] += row["Salary"] / out[did][-2]
-                out[did][-1] = round(out[did][-1], 2)
+            if out[did][-3] > 0:
+                out[did][-2] += row["Salary"] / out[did][-3]
+                out[did][-2] = round(out[did][-2], 2)
     df_out = pd.DataFrame.from_dict(out, orient="index", columns=cols)
     df_out.to_csv(f"processed_data/department_data/{year}.csv")
 
@@ -250,3 +194,8 @@ def make_new_year_data():
     make_network_data() # needs to be run because api fields will have changed
     make_department_data(year)
     make_department_network_data(year)
+
+# run this once a year to update data
+#make_new_year_data()
+
+make_position_data(2024)

@@ -6,6 +6,20 @@ import random
 
 CURRENT_YEAR = 2024 # update this to be the latest year in the data folder
 
+ISP = 0
+NETWORK_SCHOOL = 1
+NETWORK_OFFICE = 2
+CENTRAL_OFFICE = 3
+CHARTER = 4 # also includes contract schools
+
+TEACHER_POSITIONS = [
+    'Bilingual Teacher' ,
+    'PartTime Teacher' ,
+    'Regular Teacher' ,
+    'School Counselor',
+    'Special Education Teacher'
+]
+
 SCHOOL_PROFILE_URL = "https://api.cps.edu/schoolprofile/CPS/"
 
 NO_DATA = "Not found"
